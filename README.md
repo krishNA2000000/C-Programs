@@ -4867,6 +4867,7 @@ int main() {
 
 Chapter 11-Pointer
 ////write a c program using pointers to read in an array of integers and print its elements in reverse order.
+
 #include <stdio.h>
 
 void printReverse(int *arr, int size) {
