@@ -5,11 +5,11 @@
 
 int main()
 {
-    printf("Seedha betho, Apna dekho, Mehnat karo!!");
+    printf("Jo hoga dekha jayega!!");
     
     return 0;
 }
-Op-Seedha betho, Apna dekho, Mehnat karo!!
+Op-Jo hoga dekha jayeha!!
 
 
 
