@@ -9,7 +9,7 @@ int main()
     
     return 0;
 }
-Op-Jo hoga dekha jayeha!!
+Op-Jo hoga dekha jayega!!
 
 
 
