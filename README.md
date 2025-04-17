@@ -735,6 +735,7 @@ int main()
     ***
       *
 
+
 #include<stdio.h>
 
 int main()
@@ -754,6 +755,7 @@ int main()
     }
 }
 
+
 //print the pattern
     *
     ***
@@ -766,6 +768,8 @@ int main()
    *****
     ***
      *
+
+     
 #include<stdio.h>
 
 int main()
@@ -797,7 +801,9 @@ int main()
     }
 }
 
+
 //print pattern
+
 *
 **
 ***
@@ -809,6 +815,7 @@ int main()
 ***
 **
 *
+
 
 #include<stdio.h>
 
@@ -834,6 +841,7 @@ int main()
     }
 }
 
+
 //print the pattern 
 A
 AB
@@ -841,6 +849,7 @@ ABC
 ABCD
 ABCDE
 ABCDEF
+
 
 #include<stdio.h>
 
@@ -857,6 +866,7 @@ int main()
     }
 }
 
+
 //print the pattern
 
 ABCDEF
@@ -865,6 +875,8 @@ ABCD
 ABC
 AB
 A
+
+
 include<stdio.h>
 
 int main()
@@ -880,12 +892,15 @@ int main()
     }
 }
 
+
+
 //print the pattern
 A
 BB
 CCC
 DDDD
 EEEEE
+
 
 #include<stdio.h>
 
@@ -902,12 +917,15 @@ int main()
     }
 }
 
+
+
 //print the pattern
 EEEEE
 DDDD
 CCC
 BB
 A
+
 
 #include<stdio.h>
 int main()
@@ -923,9 +941,11 @@ int main()
     }
 }
 
+
 1.10 program to print the following figure using suitable characters.
  
 //using printf
+
 #include <stdio.h>
 
 int main()
@@ -940,7 +960,9 @@ int main()
     
     
 }
+
 //without using printf
+
 #include <stdio.h>
 
 int main() {
@@ -1011,7 +1033,10 @@ int main() {
     return 0;
 }
 
+
 //aarea of triangle is given by the formula A=square root of s(s-a)(s-b)(s-c) where a,b and c are sides of the triangle and 2s = a+b+c. write a program to compute the area of the triangle given the values of a,b and c. 
+
+
 #include<stdio.h>
 #include<math.h>
 
@@ -1028,7 +1053,9 @@ int main()
     return 0;
 }
 
+
 //write a c program to display the following simple arithmetic calculator: x=__,y=__,sum=__,difference=__, product=__,division=___
+
 
 
 #include<stdio.h>
@@ -1059,7 +1086,10 @@ int main()
     
     
 }
+
+
 //distance between two points (x1,y1)and (x2,y2) is governed by the formula D^2=(x2-x1)^2+(y2-y1)^2. write a program to compute the D given the coordinates of the points.
+
 
 #include <stdio.h>
 #include <math.h>
@@ -1082,7 +1112,10 @@ int main() {
 
     return 0;
 }
+
+
 //a point on the circumference of a circle whose centre is(0,0) is (4,5). write a program to compute perimeter and area of the circle.
+
 
 #include <stdio.h>
 #include <math.h>
@@ -1110,7 +1143,10 @@ int main() {
     return 0;
 }
 
+
+
 //the line joining the points(2,2) and (5,6) which lie on the circumference of a circle is the diameter of the circle. Write a program in c to compute the area of the circle
+
 
 #include <stdio.h>
 #include <math.h>
@@ -1135,7 +1171,9 @@ int main() {
     return 0;
 }
 
+
 //write a c program to determine and print the sum of the following harmonic series for a given value of n: 1+1/2+1/3+.......+1/n. the value of n should be given interactively through the terminal.
+
 #include <stdio.h>
 
 int main()
@@ -1160,6 +1198,7 @@ int main()
     }
     return 0;
 }
+
 
 //write a program to read the price of an item in decimal form (like 18.55) and print the output in paise (like 1855)
 
