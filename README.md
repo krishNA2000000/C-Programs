@@ -36,7 +36,10 @@ enter the value of a and b:
 6
 the value of 5 and 6 is:11
 
+
 //representation of integer constants on 16-bit machine
+
+
 #include<stdio.h>
 
 int main()
@@ -59,9 +62,14 @@ long integer values
 
 32767 32768 32777
 
+
+
 //to print ASCII values use  apostrophe
 //here a is not equal to 'a'
 //'a' will give the ASCII value of letter a
+
+
+
 #include<stdio.h>
 
 int main()
@@ -72,7 +80,11 @@ int main()
 }
 Op-97
 
+
+
 //use of prompt message i.e., using printf and scanf
+
+
 
 #include<stdio.h>
 int main()
@@ -97,7 +109,12 @@ enter a number:
 666
 the number contains more than two digits!
 
+
+
+
 //declarations, assignmentsand values stores in various types of variables.
+
+
 #include<stdio.h>
 
 int main()
@@ -134,7 +151,12 @@ x=1.234568
 y=9.876543210000
 y=9.876543
 k=54321  p=1.000000  q=1.000000000000
+
+
+
 //printing even number between 1-100
+
+
 #include<stdio.h>
 
 int main()
@@ -151,7 +173,11 @@ int main()
         
     }
 }
+
+
 Programming exercise (chapter 1)
+
+
 //1.1equation of line ax+by=c
 #include<stdio.h>
 
@@ -168,7 +194,10 @@ int main()
 
 o/p-5x + 8y = 18
 
+
 //1.2 mailing address in the following form
+
+
 #include <stdio.h>
 
 int main() {
@@ -189,7 +218,11 @@ int main() {
 o/p-Name: Krishna Singh
 door no.,street: 123, Jawaharnagar
 City: vskp – 12345
+
+
 //1.3 multiplication table 
+
+
 #include<stdio.h>
 
 int main()
@@ -218,7 +251,10 @@ enter the value of n:
 5 X 8 = 40
 5 X 9 = 45
 5 X 10 = 50
+
+
 //diagonal to zero
+
 #include<stdio.h>
 #define S 5
 
@@ -253,7 +289,10 @@ the elements are:
 00100
 00010
 00001
+
+
 //given the values of three variables a,b and c, wirte a c program to compute and display the value of x, where x=a/b-c. execute your program for the following values: a)a=250 ,b=85,c=25. b)a=300, b=70, c=70
+
 
 #include<stdio.h>
 
@@ -286,7 +325,10 @@ For a=250, b=85, c=25, x=4.00
 Test case 2
 For a=300, b=70, c=70 ,x=-65.7143
 
+
+
 //relationship between celsius and fahrenheit is governed by the formula F=9C/5+32. write a c program to convert the temperature a)from Celsius to Fahrenheit and b) From Fahrenheit to Celsius
+
 
 
 #include <stdio.h>
@@ -320,7 +362,10 @@ int main()
     
 }
 
+
+
 //given the radius of a circle, write a program to compute and display its area. Use a symbolic constant to define the pi value and assume a suitable value for radius
+
 
 #include <stdio.h>
 #define PI 3.14
@@ -337,9 +382,12 @@ int main()
     
     }
 
+    
+
 //Given two integers 20 and 10, write a c program that uses a function add() to add these two numbers and sub() to find the difference of these two numbers and then  display the sum and difference in the following form:
 20+10=30
 20-10=10
+
 
 #include<stdio.h>
 
@@ -366,11 +414,14 @@ int main()
     return 0;
 }
 
+
 //print the pattern 
 *****
 *****
 *****
 *****
+
+
 #include<stdio.h>
 
 int main()
@@ -388,12 +439,14 @@ int main()
     return 0;
 }
 
+
 //print the pattern
 *
 **
 ***
 ****
 *****
+
 
 #include<stdio.h>
 
@@ -412,6 +465,7 @@ int main()
     return 0;
 }
 
+
 //print the pattern
 
 *****
@@ -419,6 +473,8 @@ int main()
 ***
 **
 *
+
+
 #include<stdio.h>
 
 int main()
@@ -434,7 +490,9 @@ int main()
         printf("\n");
     }
 }
+
 (or)
+
 #include<stdio.h>
 
 int main()
@@ -450,6 +508,7 @@ int main()
     }
 }
 
+
 //print the pattern
 1
 12
@@ -461,6 +520,8 @@ int main()
 12345678
 123456789
 12345678910
+
+
 #include<stdio.h>
 
 int main()
@@ -475,6 +536,8 @@ int main()
         printf("\n");
     }
 }
+
+
 //print the pattern
 654321
 65432
@@ -482,6 +545,8 @@ int main()
 654
 65
 6
+
+
 #include<stdio.h>
 
 int main()
@@ -497,6 +562,7 @@ int main()
     }
 }
 
+
 //print the pattern
 123456
 12345
@@ -504,6 +570,7 @@ int main()
 123
 12
 1
+
 
 #include<stdio.h>
 
@@ -520,6 +587,7 @@ int main()
     }
 }
 
+
 //print the pattern
       *
     **
@@ -527,6 +595,7 @@ int main()
   ****
  *****
 ******
+
 
 #include<stdio.h>
 
@@ -546,6 +615,8 @@ int main()
     }
 }
 
+
+
 //Print the pattern
 1
 22
@@ -553,6 +624,7 @@ int main()
 4444
 55555
 666666
+
 
 #include<stdio.h>
 
@@ -569,6 +641,8 @@ int main()
     }
 }
 
+
+
 //print the pattern
 1 
  2  3 
@@ -576,6 +650,7 @@ int main()
  7  8  9  10 
  11  12  13  14  15 
  16  17  18  19  20  21
+
 
 #include<stdio.h>
 
@@ -593,6 +668,7 @@ int main()
     }
 }
 
+
 //Print the pattern
      * 
     * * 
@@ -600,6 +676,7 @@ int main()
   * * * * 
  * * * * * 
 * * * * * *
+
 
 #include<stdio.h>
 
@@ -620,6 +697,7 @@ int main()
     }
 }
 
+
 //print the pattern
       *
     ***
@@ -627,6 +705,7 @@ int main()
   *******
  *********
 ***********
+
 
 #include<stdio.h>
 
@@ -646,6 +725,8 @@ int main()
         printf("\n");
     }
 }
+
+
 //print the pattern
 ***********
  *********
