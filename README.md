@@ -2011,6 +2011,7 @@ int main()
     
 }
 
+
 //write a c program to demonstrate the process of multiplication . the program should ask the user to enter two two-digit integers and print the product of integers as shown below.
                                    45
                       *           37
@@ -2021,6 +2022,8 @@ int main()
                     ----------------------
 Add them                    1665
                   ------------------------
+
+
 
 #include <stdio.h>
 
@@ -2057,11 +2060,15 @@ int main() {
     printf("     --------------------------\n");
 
     return 0;
+    
 }
+
+
 //Write a  program to read  three integers from the keyboard using one scanf statement and output them on one line using:
 a)three printf statements
 b)only one printf with conversion specifiers , and
 c) only one printf without conversion specifiers
+
 
 #include <stdio.h>
 
@@ -2089,10 +2096,14 @@ int main() {
     return 0;
 }
 
+
+
 //write a c program that prints the value 10.45678 in exponential format with the following specifications:
 a)correct to two decimal places;
 b)correct to four decimal places and
 c)correct to eight decimal places
+
+
 #include<stdio.h>
 
 int main()
@@ -2105,6 +2116,8 @@ int main()
     printf("\n%e",x);
     return 0;
 }
+
+
 //write a c program to print the value 345.6789 in fixed-point format with the following specifications:
 a)correct to two decimal places;
 b)correct to five decimal places;
