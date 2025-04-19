@@ -2122,6 +2122,8 @@ int main()
 a)correct to two decimal places;
 b)correct to five decimal places;
 c)correct to zero decimal places
+
+
 #include <stdio.h>
 
 int main() {
@@ -2139,10 +2141,13 @@ int main() {
     return 0;
 }
 
+
 //write a c program to read the name ANIL KUMAR GUPTA  in three parts using the scanf statement and to display the same in the following format using the printf statement.
 a)	ANIL K. GUPTA
 b)	A.K. GUPTA
 c)	GUPTA A.K.
+
+
 #include<stdio.h>
 
 int main()
@@ -2157,12 +2162,17 @@ int main()
     printf("\nc)%s %c.%c.",ln,fn[0],mn[0]);
     
     return 0;
+    
 }
+
+
 //write a c program to read and display the following table of data.
 Name               code              price
 Fan                  67831          1234.50
 Motor              450             5786.70
 The name and code must be left-justified and price must be right-justified
+
+
 #include <stdio.h>
 
 int main() {
@@ -2179,11 +2189,14 @@ int main() {
     return 0;
 }
 
+
 Chapter 5: Decision making and branching (exercise questions)
+
 //write a c program to determine whether a given number is ‘odd’ or ‘even’ and print the message NUMBER IS EVEN or NUMBER IS ODD
 a)	Without using else option and
 b)	With else option
 a) #include<stdio.h>
+
 
 int main()
 {
@@ -2199,6 +2212,7 @@ int main()
     printf("%d is odd",m);
     return 0;
 }
+
 b) #include<stdio.h>
 
 int main()
@@ -2214,7 +2228,11 @@ int main()
     printf("%d is odd",m);
     return 0;
 }
+
+
 //write a c program to find the number of and sum of all integers greater than 100 and less than 200  that are divisible by 7.
+
+
 #include<stdio.h>
 
 int main()
@@ -2233,6 +2251,7 @@ int main()
     return 0;
 }
 
+
 //a set of two linear equations with two unknown x1 and x2 is given below:
  ax1  + bx2=m
 cx1+dx2=n
@@ -2241,6 +2260,8 @@ x1=(md-bn)/(ad-cb)
 x2=(na-mc)/(ad-cb)
 provided the denominator ad-cb is not equal to zero.
 Write a c program that will read the values ofconstants of a,b,c,d,m and n and compute the values of x1, and x2. An appropriate message should be printed if ad-cb=0
+
+
 #include <stdio.h>
 
 int main() {
@@ -2271,6 +2292,8 @@ int main() {
 
     return 0;
 }
+
+
 //given a list of marks ranging from 0 to 100, write a c program to compute and print the number of students:
 a)who have obtained more than 80 marks,
 b) who have obtained more than 60 marks
@@ -2281,6 +2304,8 @@ f)in the range 61 to 80
 g) in the range 41 to 60
 h) in the range 0 to 40 
 the program should use a minimum number of if statements.
+
+
 #include <stdio.h>
 
 int main() {
@@ -2320,6 +2345,7 @@ int main() {
     return 0;
 }
 
+
 //admission to a professional course is subject to   the following conditions:
 a)marks in mathematics>=60
 b)marks in physics>=50
@@ -2327,6 +2353,8 @@ c)marks in chemistry>=40
 d)total in three subjects>=200
 or total in mathematics and physics >=150
 given the marks in the three subjects, write a program to process the applications to list the eligible candidates.
+
+
 #include <stdio.h>
 
 int main() {
@@ -2351,6 +2379,8 @@ int main() {
     return 0;
 }
 
+
+
 //write a c program to print a two-dimensional square root table as shown, to provide the square root of any number from 0 to 9.9. for example, the value of x will give the square root of 3.2 and y the square root of 3.9
 Square root table
 Number              0.0         0.1         0.2     ………. 0.9
@@ -2359,6 +2389,8 @@ Number              0.0         0.1         0.2     ………. 0.9
 2.0
 3.0                                                   x                       y
 9.0
+
+
 
 #include <stdio.h>
 #include <math.h>
@@ -2385,6 +2417,7 @@ int main() {
 
     return 0;
 }
+
 
 //print the floyd’s triangle from 1 to 91
 #include <stdio.h>
