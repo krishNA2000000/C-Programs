@@ -2541,6 +2541,7 @@ return 0;
 }
 
 
+
 //write a c program that will read the value of x and evaluate the following function
 
 1	for x<0
@@ -2548,6 +2549,8 @@ return 0;
            -1 for x<0
 
 Using a)nested if statements,b)else if statements c)conditional operator?:
+
+
 #include <stdio.h>
 
 int main() {
@@ -2586,6 +2589,7 @@ int main() {
     return 0;
 }
 
+
 //write a c program to compute the real roots of a quadratic equation ax^2+bx+c=0.
 The roots are given by the equations
 X1=-b+(root of (b^2-4ac/2a)
@@ -2596,6 +2600,8 @@ b)	there is only one root , if a=0(x=-c/b)
 c)	there are no real roots, if b^2-4ac is negative
 d)	otherwise , there are two real roots
 test your program with appropriate data so that all logical paths are working as per your design. Incorporate appropriate output messages
+
+
 #include <stdio.h>
 #include <math.h>
 
@@ -2627,7 +2633,11 @@ int main() {
     return 0;
 }
 
+
+
 //Write a c program  to read three integer values from the keyboard and displays the output stating that they  are thesides of right-angled triangle.
+
+
 #include <stdio.h>
 #include <math.h>
 
@@ -2648,11 +2658,14 @@ int main() {
     return 0;
 }
 
+
 //an electricity board charges the following rates for the use of electricity:
 For the first 200 units: 80P per unit
 For the next 100 units: 90 P per unit
 Beyond 300 units: Rs.1 per unit
 All users are charged a minimum of Rs. 100 as meter charge. If the total amount is more than Rs. 400 , then an additional surcharge of 15% of total amount is charged.Write a c program  to read the names of users and number of units consumed and print out the charges with names.
+
+
 #include <stdio.h>
 
 int main() {
@@ -2693,7 +2706,10 @@ int main() {
     return 0;
 }
 
+
 //write a c program to compute and display the sum of all integers that are divisible by 6 but not divisible by 4 and lie between 0 and 100. The program should also count and display the number ofsuch values.
+
+
 #include <stdio.h>
 
 int main() {
@@ -2712,7 +2728,10 @@ int main() {
     return 0;
 }
 
+
 // write a c program that could read a positive integer number and decide whether the number is prime number and display the output accordingly.modify the program to count all  the prime numbers that lie between 100 and 200
+
+
 #include <stdio.h>
 
 int is_prime(int num) {
@@ -2754,9 +2773,14 @@ int main() {
     return 0;
 }
 
+
+
 Chapter 6 Decision making and looping(exercise questions).
+
 //given a number, write a c program using while loop to reverse the digits of the number. For example , the number 12345 should be written as 54321.
 HINT: use modulus operator to extract the last digit and the integer division by 10 to get the n-1 digit number from the n digit number.)
+
+
 #include <stdio.h>
 
 int main() {
@@ -2776,8 +2800,12 @@ int main() {
     return 0;
 }
 
+
 //the factorial of an integer m is the product of consecutive integers from 1 to m. that is, factorial m=m!=m*(m-1)*…….x1.
+
 Write a c program that computes and prints a table of factorials for any given m.
+
+
 #include<stdio.h>
 
 int main()
@@ -2802,7 +2830,10 @@ int main()
     
 }
 
+
 //write a c program to compute the sum of the digits of a given integers number.
+
+
 #include<stdio.h>
 
 int main()
@@ -2828,6 +2859,8 @@ int main()
 
 //the number in the sequence 0 1 1 2 3 5 8 13 21 …. Are called Fibonacci numbers. Write a c program using a do… while loop to  calculate and print the first m Fibonacci numbers.
 (hint: after the first two numbers in the series, each number is the sum of the two preceding numbers)
+
+
 #include<stdio.h>
 
 int main()
@@ -2859,7 +2892,10 @@ int main()
     return 0;
 }
 
+
 //a program to evaluate the equation y=x^n. when n is a non negative integer. The variable y is initialized to 1 and then multiplied by x,n times using the for loop.
+
+
 #include<stdio.h>
 
 int main()
@@ -2877,11 +2913,14 @@ int main()
     return 0;
 }
 
+
 //write a c program to evaluate the following investment equation v=p(1+r)^n and print the tables which would give the value of v for various combination of the following values of p,r, and n.
 p : 1000,2000,3000,….,10000
 r:0.10,0.11,0.12……..,0.20
 n:1,2,3,….,10
 (hint: p is the principal amount and v is the value of money at the end of n years. This equation can be recursively written as v=p(1+r) and p=v, that is , the value of money at the end of first year beomces the principal amount for the next year and so on.)
+
+
 #include<stdio.h>
 #include<math.h>
 
@@ -2908,6 +2947,7 @@ int main()
     return 0;
     
 }
+
 
 //write a program to print the pattern using for loop
 a)	1
