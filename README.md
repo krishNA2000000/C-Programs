@@ -2949,6 +2949,7 @@ int main()
 }
 
 
+
 //write a program to print the pattern using for loop
 a)	1
 22
@@ -2961,7 +2962,9 @@ b)*************
            *********
                   *****
                           *
+                          
 Answer a)
+
 #include<stdio.h>
 
 int main()
@@ -2975,7 +2978,10 @@ int main()
         printf("\n");
     }
 }
+
+
 Answer b)
+
 #include<stdio.h>
 
 int main()
@@ -2996,6 +3002,7 @@ int main()
     }
     return 0;
 }
+
 
 //write a c program to read the age of 100 persons and count the  number of persons in the age group 50 to 60. Use for and continue statements
 #include <stdio.h>
