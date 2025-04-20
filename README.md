@@ -2392,6 +2392,7 @@ Number              0.0         0.1         0.2     ………. 0.9
 
 
 
+
 #include <stdio.h>
 #include <math.h>
 
@@ -2419,7 +2420,10 @@ int main() {
 }
 
 
+
 //print the floyd’s triangle from 1 to 91
+
+
 #include <stdio.h>
 
 int main() {
@@ -2434,12 +2438,16 @@ int main() {
 
     return 0;
 }
+
+
 //print the pattern
+
 1
 0 1
 1 0 1
 0 1 0 1
 1 0 1 0 1
+
 
 #include <stdio.h>
 
@@ -2461,6 +2469,8 @@ int main() {
     return 0;
 }
 
+
+
 //a cloth showroom has announced the following seasonal discounts on purchase of item:
 Purchase amount                                                       discount
                                              Mill cloth                                           handloom items
@@ -2470,6 +2480,8 @@ Purchase amount                                                       discount
 Above 300                                 10.0%                                                       15.0%
 
 Write a c program using switch and if statements to compute the net amount to be paid by a customer.
+
+
 #include<stdio.h>
 
 int main()
@@ -2527,6 +2539,7 @@ printf("\nthe discount u will get is %f:",discount);
 printf("\n the net amount after discount is %f:",net);
 return 0;
 }
+
 
 //write a c program that will read the value of x and evaluate the following function
 
