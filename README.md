@@ -3244,6 +3244,7 @@ int main()
 }
 
 //given a set of 10 two digits integers containing both positive and negative values, write a c program using for loop to compute the sum of all positive values and print the sum and the number of values added. The program should use scanf to read the values and terminate when the sum exceeds 999. Do not use goto statement.    
+
 #include <stdio.h>
 
 int main() {
@@ -3275,8 +3276,12 @@ int main() {
     return 0;
 }
 
+
 Chapter -7 Arrays (exercise questions)
+
 Basic programs of arrays 
+
+
 1.	To read array elements
 #include<stdio.h>
 
