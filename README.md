@@ -5103,6 +5103,7 @@ int main() {
 }
 
 Chapter 11-Pointer
+
 ////write a c program using pointers to read in an array of integers and print its elements in reverse order.
 
 #include <stdio.h>
@@ -5135,6 +5136,38 @@ int main() {
 
     return 0;
 }
+
+///C pointer program to add two numbers:
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum;
+    int *ptr1, *ptr2;
+
+    // Input numbers
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Pointers point to the variables
+    ptr1 = &num1;
+    ptr2 = &num2;
+
+    // Add using pointers
+    sum = *ptr1 + *ptr2;
+
+    // Output result
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+o/p- 
+Enter first number: 2
+Enter second number: 6
+Sum = 8
+
 
 ////write a function (using pointer parameters) that compares two integer arrays to see whether they are identical . The function returns 1 if they are identical, 0 otherwise.
 #include <stdio.h>
@@ -5179,6 +5212,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
