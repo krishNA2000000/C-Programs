@@ -5137,7 +5137,7 @@ int main() {
     return 0;
 }
 
-///C pointer program to add two numbers:
+///C simple pointer program to add two numbers:
 #include <stdio.h>
 
 int main() {
@@ -5167,6 +5167,45 @@ o/p-
 Enter first number: 2
 Enter second number: 6
 Sum = 8
+
+///C pointer program to swap two numbers:
+
+#include <stdio.h>
+
+void swap(int *x, int *y) {
+    int temp;
+
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int main() {
+    int a, b;
+
+    // Input values
+    printf("Enter value for a: ");
+    scanf("%d", &a);
+
+    printf("Enter value for b: ");
+    scanf("%d", &b);
+
+    // Before swap
+    printf("Before swap: a = %d, b = %d\n", a, b);
+
+    // Swap using pointers
+    swap(&a, &b);
+
+    // After swap
+    printf("After swap: a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+o/pp-
+Enter value for a: 3
+Enter value for b: 5
+Before swap: a = 3, b = 5
+After swap: a = 5, b = 3
 
 
 ////write a function (using pointer parameters) that compares two integer arrays to see whether they are identical . The function returns 1 if they are identical, 0 otherwise.
