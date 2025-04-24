@@ -62,6 +62,34 @@ long integer values
 
 32767 32768 32777
 
+//c program to print armstrong number
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int num, originalNum, remainder, result = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    originalNum = num;
+
+    while (originalNum != 0) {
+        remainder = originalNum % 10;
+        result += remainder * remainder * remainder; // or use pow(remainder, 3)
+        originalNum /= 10;
+    }
+
+    if (result == num)
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
+
+    return 0;
+}
+
+
 
 
 //to print ASCII values use  apostrophe
