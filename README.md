@@ -100,6 +100,21 @@ int main() {
     return 0;
 }
 
+o/p-
+1)Enter a number: 8208
+8208 is an Armstrong number.
+2)Enter a number: 9474
+9474 is an Armstrong number.
+3)Enter a number: 153
+153 is an Armstrong number.
+4)Enter a number: 371
+371 is an Armstrong number.
+5)Enter a number: 2222
+2222 is not an Armstrong number.
+6)Enter a number: 632
+632 is not an Armstrong number.
+
+
 
 
 
