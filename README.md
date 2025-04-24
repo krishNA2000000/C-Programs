@@ -68,13 +68,13 @@ long integer values
 #include <math.h>
 
 int main() {
-    int num, originalNum, remainder, digits = 0;
+    int num, remainder, digits = 0;
     double result = 0.0;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    originalNum = num;
+    
 
     // Count number of digits
     int temp = num;
