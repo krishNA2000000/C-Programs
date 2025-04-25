@@ -61,8 +61,43 @@ integer values
 long integer values
 
 32767 32768 32777
+////To find GCD of 2,3,4,n numbers given, taken by the user.
+#include <stdio.h>
 
-//c program to print armstrong number
+// Function to calculate GCD of two numbers
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+
+// Function to calculate GCD of multiple numbers
+int gcd_multiple(int nums[], int n) {
+    int result = nums[0];
+    for (int i = 1; i < n; i++) {
+        result = gcd(result, nums[i]);
+    }
+    return result;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of digits: ");
+    scanf("%d", &n);
+
+    int nums[n];
+    printf("Enter %d numbers: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+    int result = gcd_multiple(nums, n);
+    printf("GCD of the numbers is: %d\n", result);
+
+    return 0;
+}
+
+/////c program to print armstrong number
 
 #include <stdio.h>
 #include <math.h>
