@@ -5,11 +5,11 @@
 
 int main()
 {
-    printf("Jo hoga dekha jayega!!");
+    printf("Bhagwan Bharose!!");
     
     return 0;
 }
-Op-Jo hoga dekha jayega!!
+Op-Bhagwan Bharose!!
 
 
 
@@ -414,6 +414,7 @@ Test case 1
 For a=250, b=85, c=25, x=4.00
 Test case 2
 For a=300, b=70, c=70 ,x=-65.7143
+
 
 
 
