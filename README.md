@@ -36,6 +36,22 @@ enter the value of a and b:
 6
 the value of 5 and 6 is:11
 
+////C Program to demonstrate sum of Natural Numbers using while loops
+
+#include <stdio.h>
+int main()
+{
+    int i, s = 0;
+    int n = 10;
+    i = 1;
+    while (i <= n) {
+    s += i;
+        i++;
+    }
+    printf("Sum = %d", s);
+    return 0;
+}
+
 
 ////// C program to print ASCII Value of Character using
 // implicit conversion with format specifier.
