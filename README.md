@@ -41,17 +41,20 @@ the value of 5 and 6 is:11
 #include <stdio.h>
 int main()
 {
-    int i, s = 0;
-    int n = 10;
+    int i, s = 0,n;
+    printf("enter the no. of natural numbers you want to find sum of:");
+    scanf("%d" , &n);
     i = 1;
     while (i <= n) {
     s += i;
         i++;
     }
-    printf("Sum = %d", s);
+    printf("Sum of the first %d natural numbers is = %d",n, s);
     return 0;
 }
-
+o/p-
+enter the no. of natural numbers you want to find sum of:30
+Sum of the first 30 natural numbers is = 465
 
 ////// C program to print ASCII Value of Character using
 // implicit conversion with format specifier.
