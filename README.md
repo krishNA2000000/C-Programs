@@ -36,6 +36,34 @@ enter the value of a and b:
 6
 the value of 5 and 6 is:11
 
+////C program to check whether an alphabet is vowel or consnant.
+
+#include <stdio.h>
+
+
+int main()
+{
+	char ch ;
+	
+	printf("Enter an alphabet to check whether it is vowel or consonant:");
+	scanf("%c", &ch);
+
+	
+	
+	if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E'
+		|| ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+		|| ch == 'u' || ch == 'U') {
+
+		printf("The character %c is a vowel.\n", ch);
+	}
+	else {
+		printf("The character %c is a consonant.\n", ch);
+	}
+
+	return 0;
+}
+
+
 ////C Program to demonstrate sum of Natural Numbers using while loops
 
 #include <stdio.h>
