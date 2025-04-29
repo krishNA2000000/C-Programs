@@ -62,6 +62,12 @@ int main()
 
 	return 0;
 }
+o/p-
+Enter an alphabet to check whether it is vowel or consonant:I
+The character I is a vowel.
+
+Enter an alphabet to check whether it is vowel or consonant:p
+The character p is a consonant.
 
 
 ////C Program to demonstrate sum of Natural Numbers using while loops
