@@ -4264,6 +4264,55 @@ int main() {
     return 0;
 }
 
+////c program using array to calculate average, max, min of elements in an integer array.
+
+#include <stdio.h>
+
+int main() {
+    int arr[100], n, i;
+    int sum = 0, max, min;
+
+    printf("Enter number of elements in the array (max 100): ");
+    scanf("%d", &n);
+
+    if (n <= 0 || n > 100) {
+        printf("Invalid size!\n");
+        return 1;
+    }
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    max = min = arr[0];
+
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) max = arr[i];
+        if (arr[i] < min) min = arr[i];
+    }
+
+    printf("Sum = %d\n", sum);
+    printf("Average = %.2f\n", (float)sum / n);
+    printf("Maximum = %d\n", max);
+    printf("Minimum = %d\n", min);
+
+    return 0;
+}
+o/p-
+Enter number of elements in the array (max 100): 5
+Enter 5 elements:
+1
+2
+3
+4
+5
+Sum = 15
+Average = 3.00
+Maximum = 5
+Minimum = 1
+
 Chapter 8: Character array and strings (exercise questions)
 //write a c program , which reads your name from the keyboard and outputs a list of ASCII codes, which represent your name.
 #include <stdio.h>
