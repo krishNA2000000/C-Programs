@@ -5258,6 +5258,29 @@ int main() {
 }
 
 Chapter 10- Structures and Unions
+----STRUCTURES-----
+-In C, a structure (struct) is a user-defined data type that groups different types of variables (called members) under a single name.
+-Syntax:
+
+struct StructureName {
+    data_type member1;
+    data_type member2;
+    ...
+};
+-Each member can be of different type.
+
+-Structures are used to model real-world entities (like a student, book, employee).
+
+-Memory is allocated for all members individually (unlike unions).
+
+-Access members using the dot operator (.) for normal variables or arrow operator (->) for pointers.
+
+---UNIONS---
+-A union can hold only one value at a time — the most recently assigned member.
+
+-Memory is shared, so assigning one member overwrites others.
+
+-Size of a union = size of its largest member.
 
 ////define a structure data type called time_struct containing three members integer hour, integer minute and integer second. Develop a program that would assign values to the individual members and display the time in the following form:16:40:51
 #include <stdio.h>
