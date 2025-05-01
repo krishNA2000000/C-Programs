@@ -5395,6 +5395,68 @@ int main() {
 
     return 0;
 }
+////C program demonstrating both structures and unions — showing their syntax, memory usage difference, and basic usage
+#include <stdio.h>
+#include <string.h>
+
+// Define a structure
+struct Student {
+    int id;
+    char name[20];
+    float marks;
+};
+
+// Define a union
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+int main() {
+    // Using Structure
+    struct Student s1;
+    s1.id = 101;
+    strcpy(s1.name, "Alice");
+    s1.marks = 95.5;
+
+    printf("Structure:\n");
+    printf("ID: %d\n", s1.id);
+    printf("Name: %s\n", s1.name);
+    printf("Marks: %.2f\n", s1.marks);
+
+    // Using Union
+    union Data d1;
+
+    d1.i = 10;
+    printf("\nUnion:\n");
+    printf("Integer: %d\n", d1.i);
+
+    d1.f = 220.5;
+    printf("Float (overwrites int): %.2f\n", d1.f);
+
+    strcpy(d1.str, "Hello");
+    printf("String (overwrites float): %s\n", d1.str);
+
+    // Size comparison
+    printf("\nSize of structure: %lu bytes\n", sizeof(s1));
+    printf("Size of union: %lu bytes\n", sizeof(d1));
+
+    return 0;
+}
+o/p-
+Structure:
+ID: 101
+Name: Alice
+Marks: 95.50
+
+Union:
+Integer: 10
+Float (overwrites int): 220.50
+String (overwrites float): Hello
+
+Size of structure: 28 bytes
+Size of union: 20 bytes
 
 Chapter 11-Pointer
 
