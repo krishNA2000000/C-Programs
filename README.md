@@ -621,6 +621,7 @@ int main()
 
 
 //print the pattern 
+
 *****
 *****
 *****
