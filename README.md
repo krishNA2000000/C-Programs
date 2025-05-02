@@ -37,6 +37,13 @@ enter the value of a and b:
 the value of 5 and 6 is:11
 
 ////C program to check whether an alphabet is vowel or consnant.
+Note:
+*Character Handling-- Uses char data type to deal with single alphabet inputs.
+*Conditional Statements --Uses if-else to branch logic based on conditions.
+*Simple and efficient logic using || (logical OR) for multiple comparisons.
+*Standard I/O --Uses printf() and scanf() for console-based input/output operations.
+*Function Structure --The entire logic is wrapped inside main()—the starting point of the program.
+*Control Flow --The program decides output based on user input dynamically at runtime.
 
 #include <stdio.h>
 
