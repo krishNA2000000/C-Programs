@@ -140,6 +140,17 @@ long integer values
 32767 32768 32777
 
 ////// C Program for Checking value is  Prime or not
+//Input the number n.
+
+*Check if n is less than or equal to 1:
+
+*If yes, it is not a prime.
+
+*Count how many numbers divide n exactly (i.e., n % i == 0).
+
+*If n has more than 2 divisors, it is not prime.
+
+*A prime number has exactly 2 divisors: 1 and n itself.
 #include <stdbool.h>
 #include <stdio.h>
 
