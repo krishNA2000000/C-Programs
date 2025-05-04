@@ -158,6 +158,37 @@ int main() {
     printf("Sum of the first %d natural numbers is = %d", n, sum);
     return 0;
 }
+(or)
+for input validation we can do:
+Uses a do-while loop for input validation.
+
+Rejects any input <= 0 with a helpful error message.
+
+Ensures correct calculation using the formula only when input is valid.
+e.g.,
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    
+    do {
+        printf("Enter a positive number of natural numbers to find the sum of: ");
+        scanf("%d", &n);
+
+        if (n <= 0) {
+            printf("Invalid input. Please enter a positive integer greater than 0.\n");
+        }
+
+    } while (n <= 0);  
+
+   
+    int sum = n * (n + 1) / 2;
+
+    printf("Sum of the first %d natural numbers is = %d\n", n, sum);
+    return 0;
+}
+
 
 
 
