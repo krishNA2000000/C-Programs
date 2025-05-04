@@ -96,6 +96,71 @@ int main()
 o/p-
 enter the no. of natural numbers you want to find sum of:30
 Sum of the first 30 natural numbers is = 465
+Other alternatives-
+1)using for loop-
+
+Uses a for loop instead of while.
+
+More compact and readable.
+
+Suitable for counting scenarios with known start/end.
+
+e.g., for (i = 1; i <= n; i++)
+    sum += i;
+2)Using function
+Logic is separated into a reusable function:
+
+Good for modularity and maintainability.
+
+The function sumOfNaturalNumbers(n) handles the computation.
+
+Main function handles I/O only.
+
+Promotes code reuse in larger projects.
+
+e.g.,
+#include <stdio.h>
+
+
+int sumOfNaturalNumbers(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of natural numbers you want to find the sum of: ");
+    scanf("%d", &n);
+
+    int result = sumOfNaturalNumbers(n);
+    printf("Sum of the first %d natural numbers is = %d", n, result);
+    return 0;
+}
+3)Using Mathematical formula
+Formula for sum of first n natural numbers: Sum=n(n+1)/2
+
+No loops — executes in constant time (O(1)).
+
+Extremely efficient, especially for large n
+e.g.,
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the number of natural numbers you want to find the sum of: ");
+    scanf("%d", &n);
+
+    int sum = n * (n + 1) / 2;
+
+    printf("Sum of the first %d natural numbers is = %d", n, sum);
+    return 0;
+}
+
+
+
 
 ////// C program to print ASCII Value of Character using
 // implicit conversion with format specifier.
