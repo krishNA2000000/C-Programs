@@ -171,7 +171,7 @@ e.g.,
 int main() {
     int n;
 
-    
+    // Prompt the user until a valid input is given
     do {
         printf("Enter a positive number of natural numbers to find the sum of: ");
         scanf("%d", &n);
@@ -180,9 +180,10 @@ int main() {
             printf("Invalid input. Please enter a positive integer greater than 0.\n");
         }
 
-    } while (n <= 0);  
+    } while (n <= 0);  // Keep asking until a valid input
 
-   
+
+    // Calculate sum using the formula
     int sum = n * (n + 1) / 2;
 
     printf("Sum of the first %d natural numbers is = %d\n", n, sum);
