@@ -238,6 +238,38 @@ Its ASCII code is 107.
 int ascii = c;
 printf("%d", ascii);
 
+////ASCII Values of Characters in a String
+user to enter a string, and then it prints the ASCII value of each character in the string.
+
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+  
+    printf("Enter a string: ");
+    scanf("%s", str);  
+
+    
+    for (int i = 0; str[i] != '\0'; i++) {
+        printf("The ASCII value of %c is %d\n", str[i], str[i]);
+    }
+
+    return 0;
+}
+o/p-
+Enter a string: Computer-c
+The ASCII value of C is 67
+The ASCII value of o is 111
+The ASCII value of m is 109
+The ASCII value of p is 112
+The ASCII value of u is 117
+The ASCII value of t is 116
+The ASCII value of e is 101
+The ASCII value of r is 114
+The ASCII value of - is 45
+The ASCII value of c is 99
+
 
 //representation of integer constants on 16-bit machine
 
