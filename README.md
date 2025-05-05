@@ -209,6 +209,34 @@ int main() {
 }
 
 o/p- The ASCII value of k is 107
+#include <stdio.h>
+Includes the standard input-output header for using printf().
+
+char c = 'k';
+Declares a character variable c and assigns it the character 'k'.
+
+printf("The ASCII value of %c is %d", c, c);
+This line prints two representations of the same variable c:
+
+%c → prints the character itself (in this case, 'k').
+
+%d → treats the character as an integer and prints its ASCII (or integer) value.
+
+ Why does %d print the ASCII value?
+In C, the char type is internally stored as an integer (usually 1 byte). When %d is used, printf() interprets the char variable as an integer and shows the ASCII code for that character.
+
+So:
+
+'k' is a character.
+
+Its ASCII code is 107.
+
+%d displays that numeric value.
+
+* example of implicit type conversion (char → int).
+
+int ascii = c;
+printf("%d", ascii);
 
 
 //representation of integer constants on 16-bit machine
