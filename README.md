@@ -1,4 +1,4 @@
-# C-ProgramsAndProjects
+# C-Programs
 //first c program
 
 #include<stdio.h>
@@ -269,6 +269,62 @@ The ASCII value of e is 101
 The ASCII value of r is 114
 The ASCII value of - is 45
 The ASCII value of c is 99
+
+////C program that reads a full string including spaces and prints the ASCII value of each character, including spaces.
+
+Using fgets-A version that supports spaces in the input string would allow the user to input full sentences or phrases, not just single words. This requires using a safer input method like fgets() instead of scanf("%s"), because scanf("%s") stops reading at the first space.
+
+fgets() reads the entire line including spaces, unlike scanf("%s").
+
+sizeof(str) ensures we don’t exceed the array size.
+
+The newline character ('\n') from pressing Enter is removed/skipped.
+
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+    
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);  // Reads input including spaces
+
+    // Print ASCII values of each character
+    for (int i = 0; str[i] != '\0'; i++) {
+        // Skip newline character if present
+        if (str[i] == '\n') {
+            continue;
+        }
+        printf("The ASCII value of '%c' is %d\n", str[i], str[i]);
+    }
+
+    return 0;
+}
+O/P-
+Enter a string: Intelligence is GOD!
+The ASCII value of 'I' is 73
+The ASCII value of 'n' is 110
+The ASCII value of 't' is 116
+The ASCII value of 'e' is 101
+The ASCII value of 'l' is 108
+The ASCII value of 'l' is 108
+The ASCII value of 'i' is 105
+The ASCII value of 'g' is 103
+The ASCII value of 'e' is 101
+The ASCII value of 'n' is 110
+The ASCII value of 'c' is 99
+The ASCII value of 'e' is 101
+The ASCII value of ' ' is 32
+The ASCII value of 'i' is 105
+The ASCII value of 's' is 115
+The ASCII value of ' ' is 32
+The ASCII value of 'G' is 71
+The ASCII value of 'O' is 79
+The ASCII value of 'D' is 68
+The ASCII value of '!' is 33
+
+
+=== Code Execution Successful ===
 
 
 //representation of integer constants on 16-bit machine
