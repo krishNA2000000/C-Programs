@@ -273,6 +273,50 @@ The ASCII value of c is 99
 
 //representation of integer constants on 16-bit machine
 
+This C program demonstrates how integer constants are represented and handled on a 16-bit machine, particularly focusing on the difference between default int and explicitly declared long int values.
+
+1. 16-bit Machine Integer Limits
+On a 16-bit machine:
+
+A standard int is typically 16 bits, which can store values from:
+
+-32,768 to 32,767 (-2¹⁵ to 2¹⁵ - 1)
+
+A long int is usually 32 bits, allowing values from:
+
+-2,147,483,648 to 2,147,483,647
+
+Explanation of Each printf() Section
+🔹 printf("%d %d %d\n", 32767, 32767+1, 32767+10);
+%d → prints values as int
+
+Values:
+
+32767 → Maximum value for int on a 16-bit machine.
+
+32767 + 1 = 32768 → Overflow, but modern compilers may promote it to int or long as needed.
+
+32767 + 10 = 32777 → Still printed fine because of compiler's internal promotion.
+
+📌 Note: On some strict 16-bit compilers, this might cause overflow and wraparound, giving incorrect/negative results.
+🔹 printf("%ld %ld %ld\n", 32767L, 32767L+1L, 32767L+10L);
+%ld → prints values as long int
+
+Appending L to a number tells the compiler it's a long literal.
+
+No overflow occurs because long is 32-bit even on most 16-bit compilers.
+
+Output: 32767 32768 32777 → All safe within the long range.
+
+⚙️ How It Works Internally
+Expression	   Type  	Output	   Notes
+32767	            int  	32767	   Within 16-bit int limit
+32767 + 1	    int	        32768	   May overflow on strict 16-bit compilers
+32767L + 10L	    long	32777	   Safe, because it's using long integers
+
+
+
+
 
 #include<stdio.h>
 
@@ -295,6 +339,15 @@ integer values
 long integer values
 
 32767 32768 32777
+
+Summary of Key Points
+Integer overflow can occur if constants exceed their type's limit.
+
+Use L suffix for long constants to avoid overflow in critical ranges.
+
+%d for int, %ld for long.
+
+On a true 16-bit compiler, you might see incorrect results (like negative values) without using long.
 
 ////// C Program for Checking value is  Prime or not
 //Input the number n.
