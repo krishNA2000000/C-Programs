@@ -324,7 +324,7 @@ The ASCII value of 'D' is 68
 The ASCII value of '!' is 33
 
 
-=== Code Execution Successful ===
+
 
 
 //representation of integer constants on 16-bit machine
@@ -502,6 +502,12 @@ int main() {
 }
 
 /////c program to print armstrong number
+*An Armstrong number (also known as a narcissistic number, pluperfect number, or pluperfect digital invariant) is a number that is equal to the sum of its own digits each raised to the power of the number of digits.
+
+*Example-
+153 = 1^3+5^3+3^3=1+125+27
+9474=9^4+4^4+7^4+4^4=6561+256+2401+256
+
 
 #include <stdio.h>
 #include <math.h>
@@ -552,6 +558,41 @@ o/p-
 2222 is not an Armstrong number.
 6)Enter a number: 632
 632 is not an Armstrong number.
+
+*This program:
+
+Counts the digits in a number,
+
+Calculates the sum of its digits each raised to the power of the number of digits,
+
+Compares that sum to the original number,
+
+Declares whether it is an Armstrong number.
+in program-
+num stores the user input number.
+
+remainder stores each digit during extraction.
+
+digits keeps track of the number of digits.
+
+result accumulates the sum of each digit raised to the power of the number of digits (can be a decimal, hence double).
+A copy of the number is stored in temp.
+
+A while loop divides temp by 10 repeatedly to count how many digits the number has.
+Reset temp to the original number.
+
+Extract each digit using % 10.
+
+Raise the digit to the power of the total number of digits using pow().
+
+Add the result to the result variable.
+
+Repeat until all digits are processed.
+Converts result to an integer and compares it with the original number.
+
+If they match, it prints that the number is an Armstrong number.
+
+Otherwise, it prints that it is not.
 
 
 
