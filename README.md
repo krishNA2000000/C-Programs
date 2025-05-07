@@ -453,6 +453,19 @@ int main() {
 }
 
 ////To find GCD of 2,3,4,n numbers given, taken by the user.
+This function uses the Euclidean algorithm to compute the GCD of two integers:
+
+If the second number b is 0, return a (base case).
+
+Otherwise, recursively call gcd(b, a % b)
+Accepts an array nums[] of size n.
+
+Initializes the result with the first element.
+
+Iteratively computes GCD of the result with each of the remaining elements.
+
+Returns the final GCD of all numbers.
+This program takes any number of integers from the user and finds their Greatest Common Divisor (GCD) using a combination of recursion and iteration.
 #include <stdio.h>
 
 // Function to calculate GCD of two numbers
