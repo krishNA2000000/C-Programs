@@ -648,6 +648,38 @@ the number contains more than two digits!
 
 
 //declarations, assignmentsand values stores in various types of variables.
+Concept Behind the Program
+Data Type Size & Precision:
+
+float is less precise (~6-7 digits).
+
+double is more precise (~15-16 digits).
+
+int and long int differ in range.
+
+Memory Storage & Truncation:
+
+When assigning a long decimal number to a float, it may lose accuracy beyond 6-7 digits.
+
+double preserves more digits after the decimal point.
+
+Chained Assignment:
+
+p = q = 1.0; assigns the same value to both variables in one line.
+
+Format Specifiers:
+
+%d for int
+
+%ld for long int
+
+%f for float
+
+%.12lf for printing up to 12 decimal places in double
+
+%u for unsigned int
+
+This program demonstrates how different data types store and print values, especially focusing on precision and formatting.
 
 
 #include<stdio.h>
@@ -687,6 +719,24 @@ y=9.876543210000
 y=9.876543
 k=54321  p=1.000000  q=1.000000000000
 
+Note:
+float x, p; — declares two floating-point variables with single precision (typically 6–7 digits).
+
+double y, q; — declares two floating-point variables with double precision (typically up to 15–16 digits).
+
+unsigned k; — declares an unsigned integer (no negative values).
+
+int m = 54321; — standard 4-byte signed integer.
+
+long int n = 1234567890; — larger range integer (commonly 8 bytes on modern systems).
+
+x is assigned a float value with many digits, but due to float precision, it may lose some accuracy.
+
+y is a double and retains more digits accurately.
+
+k is assigned a positive value that fits within the unsigned int range.
+
+p = q = 1.0; — Both variables p and q are assigned the value 1.0 using chained assignment.
 
 
 //printing even number between 1-100
