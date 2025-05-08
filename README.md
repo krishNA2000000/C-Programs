@@ -738,6 +738,13 @@ k is assigned a positive value that fits within the unsigned int range.
 
 p = q = 1.0; — Both variables p and q are assigned the value 1.0 using chained assignment.
 
+*Type Casting and Implicit Conversion*
+The program also illustrates implicit type conversion when variables are passed to printf()—for example, the float x is promoted to double automatically when printed with %f or %.12lf, as per the default promotion rules in C.
+
+This behavior helps explain why float values may sometimes appear more precise in output than they actually are in memory, highlighting the importance of understanding how the compiler handles type promotion and formatting internally.
+
+
+
 
 //printing even number between 1-100
 
