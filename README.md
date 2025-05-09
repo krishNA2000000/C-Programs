@@ -827,6 +827,28 @@ int main()
 
     return 0;
 }
+int evenNumbers[50]; — Creates an array to store the 50 even numbers between 1 and 100.
+
+index keeps track of where to insert the next even number.
+
+After storing, a second loop prints the stored numbers.
+
+Finally, it prints how many even numbers were found.
+Array Declaration: Used to store multiple values of the same type — here, 50 even integers.
+
+Looping with Step Size 2: Efficiently generates only even numbers (2, 4, ..., 100).
+
+Indexing: Tracks array positions where numbers are stored.
+
+Two Loops: One for storing values, another for displaying them.
+
+Separation of Logic: Storing and printing are kept separate for clarity and flexibility.
+
+Memory Efficiency: Fixed-size array as we know in advance there are 50 even numbers.
+
+Total Count Output: Helpful for verification or further processing.
+
+Modular Structure: Easy to modify for other ranges or conditions.
 
 
 
