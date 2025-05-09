@@ -746,7 +746,7 @@ This behavior helps explain why float values may sometimes appear more precise i
 
 
 
-//printing even number between 1-100
+/////printing even number between 1-100
 
 
 #include<stdio.h>
@@ -765,6 +765,71 @@ int main()
         
     }
 }
+
+(or)
+//without using if
+#include <stdio.h>
+
+int main()
+{
+    printf("The even numbers between 1 to 100 are:\n");
+    for(int i = 2; i <= 100; i += 2)
+    {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+The loop starts from i = 2, which is the first even number in the range.
+
+Instead of increasing i by 1, we increment it by 2, so it directly goes to the next even number (e.g., 2, 4, 6, ...).
+
+This removes the need for the if(i % 2 == 0) check, making the code more efficient.
+Header File <stdio.h>: Includes standard input/output functions like printf().
+
+Main Function main(): This is the starting point of program execution.
+
+Looping with for: Repeats a block of code for a specific range (i = 2 to 100).
+
+Initialization: Starts from 2 (the first even number).
+
+Condition i <= 100: Ensures the loop runs until 100.
+
+Increment by 2 (i += 2): Skips odd numbers and directly moves to the next even.
+
+printf(): Prints each even number on a new line.
+
+Efficient Approach: Avoids unnecessary condition checks, improving performance.
+
+//C Program: Store and Print Even Numbers in an Array
+#include <stdio.h>
+
+int main()
+{
+    int evenNumbers[50]; // There are 50 even numbers between 1 and 100
+    int index = 0;
+
+    // Storing even numbers in the array
+    for(int i = 2; i <= 100; i += 2)
+    {
+        evenNumbers[index] = i;
+        index++;
+    }
+
+    // Printing even numbers from the array
+    printf("The even numbers between 1 and 100 are:\n");
+    for(int i = 0; i < index; i++)
+    {
+        printf("%d\n", evenNumbers[i]);
+    }
+
+    // Displaying total count
+    printf("Total even numbers between 1 and 100: %d\n", index);
+
+    return 0;
+}
+
+
+
 
 
 Programming exercise (chapter 1)
