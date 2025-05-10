@@ -858,6 +858,27 @@ Programming exercise (chapter 1)
 
 
 //1.1equation of line ax+by=c
+
+This C program prints a linear equation in the form:
+
+ax+by=c
+In mathematics, the general equation of a straight line in two dimensions is often written as:
+ax+by=c
+a, b, and c are constants (integers in this case).
+
+x and y are variables representing coordinates on a 2D plane.
+
+This is a standard form of a linear equation in two variables.
+The program simply:
+
+Declares and initializes integers a = 5, b = 8, and c = 18.
+
+Uses printf to format and print the equation.
+%d is a format specifier for integers.
+
+The variables are inserted into the equation using printf.
+
+
 #include<stdio.h>
 
 int main()
@@ -872,6 +893,7 @@ int main()
 }
 
 o/p-5x + 8y = 18
+
 
 
 //1.2 mailing address in the following form
