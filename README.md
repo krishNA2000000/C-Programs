@@ -893,6 +893,78 @@ int main()
 }
 
 o/p-5x + 8y = 18
+////program where the user inputs the values of a, b, and c to display the equation of the line for the above question:
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+
+    // Prompting user to enter coefficients
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+
+    printf("Enter the value of c: ");
+    scanf("%d", &c);
+
+    // Displaying the linear equation
+    printf("The equation of the line is: %dx + %dy = %d\n", a, b, c);
+
+    return 0;
+}
+
+
+////enhance the above program of straight line into a slope-intercept form
+ax+by=c into slope intercept form y=mx+c0 where m=-a/b(slope) and c0=c/b(y intercept)
+
+#include <stdio.h>
+
+int main()
+{
+    float a, b, c;
+
+    // Input coefficients
+    printf("Enter the value of a: ");
+    scanf("%f", &a);
+
+    printf("Enter the value of b: ");
+    scanf("%f", &b);
+
+    printf("Enter the value of c: ");
+    scanf("%f", &c);
+
+    // Print standard form
+    printf("\nStandard form: %.2fx + %.2fy = %.2f\n", a, b, c);
+
+    // Avoid division by zero
+    if (b == 0)
+    {
+        printf("Cannot convert to y = mx + c form (division by zero).\n");
+    }
+    else
+    {
+        float m = -a / b;
+        float c0 = c / b;
+        printf("Slope-intercept form: y = %.2fx + %.2f\n", m, c0);
+    }
+
+    return 0;
+}
+o/p-
+Enter the value of a: 1
+Enter the value of b: 2
+Enter the value of c: 3
+
+Standard form: 1.00x + 2.00y = 3.00
+Slope-intercept form: y = -0.50x + 1.50
+
+
+
+
 
 
 
