@@ -995,6 +995,143 @@ int main() {
 o/p-Name: Krishna Singh
 door no.,street: 123, Jawaharnagar
 City: vskp – 12345
+//update of the above program-mailing address program that takes user input using scanf() instead of using hardcoded values.
+#include <stdio.h>
+
+int main() {
+    // Character arrays to store address components
+    char name[50];
+    char doorNo[10];
+    char street[50];
+    char city[30];
+    char pinCode[10];
+
+    // Taking input from user
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin); // To allow full name with spaces
+
+    printf("Enter door number: ");
+    scanf("%s", doorNo);
+
+    printf("Enter street name: ");
+    scanf("%s", street); // This will stop at the first space
+
+    printf("Enter city name: ");
+    scanf("%s", city);
+
+    printf("Enter pin code: ");
+    scanf("%s", pinCode);
+
+    // Printing the mailing address
+    printf("\n--- Mailing Address ---\n");
+    printf("Name: %s", name); // Already has \n if entered via fgets
+    printf("door no.,street: %s, %s\n", doorNo, street);
+    printf("City: %s - %s\n", city, pinCode);
+
+    return 0;
+}
+note:
+fgets() is used for name to allow spaces in full names.
+
+scanf() is used for other fields where spaces are usually not expected.
+
+note:
+ To handle spaces in all input fields like full name, street name, and city name, we’ll use fgets() instead of scanf() for string input. 
+ #include <stdio.h>
+
+int main() {
+    // Character arrays to store address components
+    char name[50];
+    char doorNo[10];
+    char street[50];
+    char city[30];
+    char pinCode[10];
+
+    // Taking input from user
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);
+
+    printf("Enter door number: ");
+    fgets(doorNo, sizeof(doorNo), stdin);
+
+    printf("Enter street name: ");
+    fgets(street, sizeof(street), stdin);
+
+    printf("Enter city name: ");
+    fgets(city, sizeof(city), stdin);
+
+    printf("Enter pin code: ");
+    fgets(pinCode, sizeof(pinCode), stdin);
+
+    // Printing the mailing address
+    printf("\n--- Mailing Address ---\n");
+    printf("Name: %s", name);
+    printf("door no.,street: %s, %s", doorNo, street);
+    printf("City: %s - %s", city, pinCode);
+
+    return 0;
+}
+(or)
+note: above program with newline removal logic using a helper function, so  mailing address prints cleanly without extra blank lines or unwanted \n characters
+#include <stdio.h>
+#include <string.h>
+
+// Helper function to remove trailing newline from fgets input
+void removeNewline(char *str) {
+    int len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
+}
+
+int main() {
+    // Character arrays to store address components
+    char name[50];
+    char doorNo[10];
+    char street[50];
+    char city[30];
+    char pinCode[10];
+
+    // Taking input from user
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);
+    removeNewline(name);
+
+    printf("Enter door number: ");
+    fgets(doorNo, sizeof(doorNo), stdin);
+    removeNewline(doorNo);
+
+    printf("Enter street name: ");
+    fgets(street, sizeof(street), stdin);
+    removeNewline(street);
+
+    printf("Enter city name: ");
+    fgets(city, sizeof(city), stdin);
+    removeNewline(city);
+
+    printf("Enter pin code: ");
+    fgets(pinCode, sizeof(pinCode), stdin);
+    removeNewline(pinCode);
+
+    // Printing the mailing address
+    printf("\n--- Mailing Address ---\n");
+    printf("Name: %s\n", name);
+    printf("door no.,street: %s, %s\n", doorNo, street);
+    printf("City: %s - %s\n", city, pinCode);
+
+    return 0;
+}
+o/p-
+Enter your name: Krishna Singh
+Enter door number: 123
+Enter street name: Jawahar Nagar
+Enter city name: Visakhapatnam
+Enter pin code: 530002
+
+--- Mailing Address ---
+Name: Krishna Singh
+door no.,street: 123, Jawahar Nagar
+City: Visakhapatnam - 530002
 
 
 
