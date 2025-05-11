@@ -970,6 +970,10 @@ Slope-intercept form: y = -0.50x + 1.50
 
 //1.2 mailing address in the following form
 
+This C program is a simple example of how to store and display a mailing address using string variables and printf() statements. 
+This is a basic I/O (Input/Output) task in C using character arrays (strings) and the printf function
+
+
 
 #include <stdio.h>
 
@@ -991,6 +995,8 @@ int main() {
 o/p-Name: Krishna Singh
 door no.,street: 123, Jawaharnagar
 City: vskp – 12345
+
+
 
 
 //1.3 multiplication table 
