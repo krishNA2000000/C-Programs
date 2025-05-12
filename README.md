@@ -1137,6 +1137,8 @@ City: Visakhapatnam - 530002
 
 
 //1.3 multiplication table 
+prints the multiplication table of a given number n from 1 to 10:
+
 
 
 #include<stdio.h>
@@ -1167,6 +1169,30 @@ enter the value of n:
 5 X 8 = 40
 5 X 9 = 45
 5 X 10 = 50
+
+//above program but this time prints multiplication tables from 1 to n, each up to 10.
+
+#include<stdio.h>
+
+int main()
+{
+    int n, i, j;
+    printf("Enter the limit n (to print tables from 1 to n):\n");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; ++i)
+    {
+        printf("\nMultiplication Table of %d:\n", i);
+        for(j = 1; j <= 10; ++j)
+        {
+            printf("%d X %d = %d\n", i, j, i * j);
+        }
+    }
+
+    return 0;
+}
+
+
 
 
 //diagonal to zero
