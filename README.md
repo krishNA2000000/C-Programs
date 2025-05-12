@@ -1231,6 +1231,17 @@ the elements are:
 00100
 00010
 00001
+note:
+The program creates a 5×5 identity matrix using nested for loops.
+
+* The main diagonal elements (where i == j) are set to 1; all others are set to 0.
+
+* Uses the ternary operator:
+(i == j) ? 1 : 0 → means “if i == j, store 1, else store 0”.
+
+* The matrix is then printed row-by-row without spaces between elements.
+
+* This is a good example of how 2D arrays and conditional logic are used to form structured patterns in C.
 
 
 //given the values of three variables a,b and c, wirte a c program to compute and display the value of x, where x=a/b-c. execute your program for the following values: a)a=250 ,b=85,c=25. b)a=300, b=70, c=70
