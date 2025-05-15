@@ -2166,7 +2166,9 @@ int main() {
 
 
 //aarea of triangle is given by the formula A=square root of s(s-a)(s-b)(s-c) where a,b and c are sides of the triangle and 2s = a+b+c. write a program to compute the area of the triangle given the values of a,b and c. 
-
+To calculate the area of a triangle using Heron’s formula:
+area=sq. root of (s(s-a)(s-b)(s-c))
+where s=a+b+c/2
 
 #include<stdio.h>
 #include<math.h>
@@ -2183,6 +2185,49 @@ int main()
     
     return 0;
 }
+(or)
+improved version of the program that validates whether a triangle can be formed from the given sides before calculating the area:
+Triangle Validity Rule:For any three sides to form a triangle, the following must be true:
+a+b>c,b+c>a,a+c>b
+
+What This Program Does Differently is-
+Checks triangle validity using the triangle inequality theorem.
+
+Avoids computing area if the triangle is invalid, preventing math errors or incorrect results.
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a, b, c, s, Ar;
+
+    // Input
+    printf("Please enter the 3 values of sides of a triangle:\n");
+    scanf("%f %f %f", &a, &b, &c);
+
+    // Check if it's a valid triangle
+    if ((a + b > c) && (b + c > a) && (a + c > b)) {
+        s = (a + b + c) / 2;
+        Ar = sqrt(s * (s - a) * (s - b) * (s - c));
+        printf("The area of the triangle is: %.2f\n", Ar);
+    } else {
+        printf("Invalid triangle. The sum of any two sides must be greater than the third side.\n");
+    }
+
+    return 0;
+}
+o/p-1)Please enter the 3 values of sides of a triangle:
+5
+6
+7
+The area of the triangle is: 14.70
+
+2)Please enter the 3 values of sides of a triangle:
+1
+2
+3
+Invalid triangle. The sum of any two sides must be greater than the third side.
 
 
 //write a c program to display the following simple arithmetic calculator: x=__,y=__,sum=__,difference=__, product=__,division=___
