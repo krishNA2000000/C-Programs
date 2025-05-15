@@ -1535,6 +1535,16 @@ for (int s = 1; s <= n - i; s++) {
 5. Test for Small Values (like n = 3 or 4)
 Helps you debug and verify the loop logic easily.
 
+*If star patterns then understand nested loops
+*Number patterns->print increasing/decreasing number
+*Alphabet patterns->ASCII values and loop logic
+*Pyramid/Right-Aligned->Use of spaces for formatting
+*Pascal’s Triangle->Binomial coefficient logic
+*Start simple: single loops, then nested.
+*For right-aligned triangles or pyramids, use space-padding.
+*Use variables wisely (like i, j, counters).
+*Comment your loops during practice to track behavior.
+
 //print the pattern 
 
 *****
