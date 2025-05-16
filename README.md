@@ -2682,7 +2682,7 @@ int main()
                 return 0;
 
             default:
-                printf("❌ Invalid choice. Try again.\n");
+                printf("Invalid choice. Try again.\n");
                 continue;
         }
 
@@ -2715,6 +2715,15 @@ double power(double base, double exponent) { return pow(base, exponent); }
 
 
 //distance between two points (x1,y1)and (x2,y2) is governed by the formula D^2=(x2-x1)^2+(y2-y1)^2. write a program to compute the D given the coordinates of the points.
+
+This C program calculates the distance between two points (x1,y1) and (x2,y2) on a 2D plane using the distance formula derived from the Pythagorean Theorem.
+
+Computation:
+
+Uses pow() to square differences.
+
+Uses sqrt() to calculate the square root of the sum.
+
 
 
 #include <stdio.h>
