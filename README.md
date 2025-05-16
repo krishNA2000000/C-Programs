@@ -2360,6 +2360,358 @@ Proper formatting.
 
 Cleaner code with user-friendly messages.
 
+(or)
+
+menu-driven version of the Simple Arithmetic Calculator that:
+
+*Accepts floating-point input.
+
+*Allows the user to choose operations (sum, difference, product, division).
+
+*Runs in a loop until the user chooses to exit.
+
+*Includes division by zero handling.
+
+#include <stdio.h>
+
+int main()
+{
+    float x, y, result;
+    int choice;
+
+    printf("------------Simple Calculator-----------\n");
+
+    do {
+        printf("\nEnter two numbers (x and y): ");
+        scanf("%f %f", &x, &y);
+
+        printf("\nSelect an operation to perform:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Exit\n");
+        printf("Enter your choice (1-5): ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                result = x + y;
+                printf("Sum = %.2f\n", result);
+                break;
+
+            case 2:
+                result = x - y;
+                printf("Difference = %.2f\n", result);
+                break;
+
+            case 3:
+                result = x * y;
+                printf("Product = %.2f\n", result);
+                break;
+
+            case 4:
+                if (y != 0) {
+                    result = x / y;
+                    printf("Division = %.2f\n", result);
+                } else {
+                    printf(" Error: Division by zero is not allowed!\n");
+                }
+                break;
+
+            case 5:
+                printf("Exiting calculator. Goodbye!\n");
+                break;
+
+            default:
+                printf(" Invalid choice. Please enter a number from 1 to 5.\n");
+        }
+
+    } while (choice != 5);
+
+    return 0;
+}
+(or)
+Using functions:
+
+#include <stdio.h>
+#include <math.h>   // for pow()
+
+// Function declarations
+float add(float a, float b);
+float subtract(float a, float b);
+float multiply(float a, float b);
+float divide(float a, float b);
+int modulus(int a, int b);
+double power(double base, double exponent);
+
+int main()
+{
+    float x, y;
+    int choice;
+    int int_x, int_y;  // for modulus
+    double result;
+
+    do {
+        printf("\n------------Advanced Calculator-----------\n");
+        printf("Enter two numbers (x and y): ");
+        scanf("%f %f", &x, &y);
+        int_x = (int)x;
+        int_y = (int)y;
+
+        printf("\nSelect an operation:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Modulus (int only)\n");
+        printf("6. Power (x^y)\n");
+        printf("7. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                result = add(x, y);
+                printf("Sum = %.2f\n", result);
+                break;
+
+            case 2:
+                result = subtract(x, y);
+                printf("Difference = %.2f\n", result);
+                break;
+
+            case 3:
+                result = multiply(x, y);
+                printf("Product = %.2f\n", result);
+                break;
+
+            case 4:
+                if (y != 0) {
+                    result = divide(x, y);
+                    printf("Division = %.2f\n", result);
+                } else {
+                    printf("Error: Division by zero!\n");
+                }
+                break;
+
+            case 5:
+                if (int_y != 0) {
+                    printf("Modulus = %d\n", modulus(int_x, int_y));
+                } else {
+                    printf(" Error: Modulus by zero!\n");
+                }
+                break;
+
+            case 6:
+                result = power(x, y);
+                printf("Power (%.2f^%.2f) = %.2lf\n", x, y, result);
+                break;
+
+            case 7:
+                printf("Exiting calculator. Goodbye!\n");
+                break;
+
+            default:
+                printf("Invalid choice. Please enter a number from 1 to 7.\n");
+        }
+
+    } while (choice != 7);
+
+    return 0;
+}
+
+// Function definitions
+float add(float a, float b) {
+    return a + b;
+}
+
+float subtract(float a, float b) {
+    return a - b;
+}
+
+float multiply(float a, float b) {
+    return a * b;
+}
+
+float divide(float a, float b) {
+    return a / b;
+}
+
+int modulus(int a, int b) {
+    return a % b;
+}
+
+double power(double base, double exponent) {
+    return pow(base, exponent);
+}
+
+(or)
+
+Advanced C Calculator with History and Chained Operations
+New Features to Add:
+Operation History – shows a log of past calculations.
+
+Chained Operations – use the result of one operation as the next input.
+
+Clear and structured output.
+
+Optionally, exit or reset history.
+
+
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+#define MAX_HISTORY 100
+
+// Function declarations
+float add(float a, float b);
+float subtract(float a, float b);
+float multiply(float a, float b);
+float divide(float a, float b);
+int modulus(int a, int b);
+double power(double base, double exponent);
+
+int main()
+{
+    float x, y, result = 0;
+    int choice;
+    int int_x, int_y;
+    double pow_result;
+
+    char history[MAX_HISTORY][100];
+    int history_count = 0;
+    int use_previous_result = 0;
+
+    do {
+        printf("\n------------Chained Calculator with History-----------\n");
+
+        if (use_previous_result && history_count > 0) {
+            x = result;
+            printf("Using previous result x = %.2f\n", x);
+        } else {
+            printf("Enter value for x: ");
+            scanf("%f", &x);
+        }
+
+        printf("Enter value for y: ");
+        scanf("%f", &y);
+        int_x = (int)x;
+        int_y = (int)y;
+
+        printf("\nChoose an operation:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Modulus (int only)\n");
+        printf("6. Power (x^y)\n");
+        printf("7. View History\n");
+        printf("8. Clear History\n");
+        printf("9. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        char entry[100];
+
+        switch (choice) {
+            case 1:
+                result = add(x, y);
+                printf("Result: %.2f\n", result);
+                snprintf(entry, sizeof(entry), "Sum: %.2f + %.2f = %.2f", x, y, result);
+                break;
+
+            case 2:
+                result = subtract(x, y);
+                printf("Result: %.2f\n", result);
+                snprintf(entry, sizeof(entry), "Difference: %.2f - %.2f = %.2f", x, y, result);
+                break;
+
+            case 3:
+                result = multiply(x, y);
+                printf("Result: %.2f\n", result);
+                snprintf(entry, sizeof(entry), "Product: %.2f * %.2f = %.2f", x, y, result);
+                break;
+
+            case 4:
+                if (y != 0) {
+                    result = divide(x, y);
+                    printf("Result: %.2f\n", result);
+                    snprintf(entry, sizeof(entry), "Division: %.2f / %.2f = %.2f", x, y, result);
+                } else {
+                    printf("Error: Division by zero!\n");
+                    continue;
+                }
+                break;
+
+            case 5:
+                if (int_y != 0) {
+                    result = modulus(int_x, int_y);
+                    printf("Result: %d\n", (int)result);
+                    snprintf(entry, sizeof(entry), "Modulus: %d %% %d = %d", int_x, int_y, (int)result);
+                } else {
+                    printf(" Error: Modulus by zero!\n");
+                    continue;
+                }
+                break;
+
+            case 6:
+                pow_result = power(x, y);
+                printf("Result: %.2lf\n", pow_result);
+                snprintf(entry, sizeof(entry), "Power: %.2f ^ %.2f = %.2lf", x, y, pow_result);
+                result = (float)pow_result;
+                break;
+
+            case 7:
+                printf("\n--- Operation History ---\n");
+                for (int i = 0; i < history_count; i++) {
+                    printf("%d. %s\n", i + 1, history[i]);
+                }
+                continue;  // skip chaining
+                break;
+
+            case 8:
+                history_count = 0;
+                printf("History cleared!\n");
+                continue;  // skip chaining
+                break;
+
+            case 9:
+                printf("Exiting calculator. Goodbye!\n");
+                return 0;
+
+            default:
+                printf("❌ Invalid choice. Try again.\n");
+                continue;
+        }
+
+        // Store in history
+        if (history_count < MAX_HISTORY) {
+            strcpy(history[history_count++], entry);
+        }
+
+        // Ask to chain result
+        printf("\nDo you want to use the result as the next x? (1 = Yes, 0 = No): ");
+        scanf("%d", &use_previous_result);
+
+    } while (1);
+
+    return 0;
+}
+
+// Arithmetic functions
+float add(float a, float b) { return a + b; }
+float subtract(float a, float b) { return a - b; }
+float multiply(float a, float b) { return a * b; }
+float divide(float a, float b) { return a / b; }
+int modulus(int a, int b) { return a % b; }
+double power(double base, double exponent) { return pow(base, exponent); }
+
+
+
+
+
 
 
 //distance between two points (x1,y1)and (x2,y2) is governed by the formula D^2=(x2-x1)^2+(y2-y1)^2. write a program to compute the D given the coordinates of the points.
