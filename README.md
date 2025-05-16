@@ -2724,6 +2724,15 @@ Uses pow() to square differences.
 
 Uses sqrt() to calculate the square root of the sum.
 
+User is prompted to enter coordinates.
+
+Inputs are stored in variables x1, y1, x2, y2.
+
+Differences are squared and added.
+
+Square root is taken of the result.
+
+Final distance is printed to two decimal places.
 
 
 #include <stdio.h>
