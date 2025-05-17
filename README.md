@@ -2760,6 +2760,16 @@ int main() {
 
 //a point on the circumference of a circle whose centre is(0,0) is (4,5). write a program to compute perimeter and area of the circle.
 
+Given a point (4, 5) on the circumference of a circle whose center is at the origin (0,0), the task is to calculate the perimeter (circumference) and area of the circle.
+
+Concepts Involved:
+Coordinate Geometry: Using the distance formula.
+
+Preprocessor Directives: #define to define constants.
+
+Mathematical Computation: sqrt(), pow() from math.h.
+
+Basic C Programming: Variables, expressions, and formatted output.
 
 #include <stdio.h>
 #include <math.h>
