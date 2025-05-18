@@ -2801,6 +2801,13 @@ int main() {
 
 //the line joining the points(2,2) and (5,6) which lie on the circumference of a circle is the diameter of the circle. Write a program in c to compute the area of the circle
 
+CONCEPT- 
+The distance between two points in 2D space is calculated using:d=sqrt((x2-x1)^2 + (y2-y1)^2)
+If this line is the diameter of a circle, then:radius=diameter/2
+The area of a circle is calculated using:
+
+𝐴=𝜋𝑟^2
+This program uses coordinate geometry and basic math in C to compute the area of a circle from two diameter-endpoints.
 
 #include <stdio.h>
 #include <math.h>
@@ -2824,6 +2831,59 @@ int main() {
 
     return 0;
 }
+
+explanation:
+
+#include <stdio.h>
+
+Includes the Standard Input Output library needed for printf().
+
+#include <math.h>
+
+Includes the Math library to use mathematical functions like sqrt() and pow().
+
+int main()
+
+Entry point of the program.
+
+float x1 = 2, y1 = 2; float x2 = 5, y2 = 6;
+
+Initializes the coordinates of the two points that lie on the circumference of the circle and are endpoints of the diameter.
+
+float radius, diameter, area;
+
+Declares variables to store radius, diameter, and area of the circle.
+
+diameter = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+Calculates the distance between the two points using the distance formula:
+
+distance=sqrt((x2-x1)^2+(y2-y1)^2)
+
+ 
+Since the line joining the two points is the diameter, this gives us the diameter of the circle.
+
+radius = diameter / 2;
+
+Radius is half of the diameter.
+
+area = 3.14159 * radius * radius;
+
+Uses the area formula for a circle:
+
+Area=𝜋𝑟^2
+ 
+Approximates 
+
+π as 3.14159.
+
+printf("Area of the circle: %.2f\n", area);
+
+Prints the area of the circle rounded to two decimal places.
+
+return 0;
+
+Ends the program successfully.
 
 
 //write a c program to determine and print the sum of the following harmonic series for a given value of n: 1+1/2+1/3+.......+1/n. the value of n should be given interactively through the terminal.
@@ -3214,7 +3274,7 @@ int main() {
 }
 
 //the straight-line method of computing the yearly depreciation of the value of an item is given by 
-Depreciation=(Prechase price-salvage value)/years of service
+Depreciation=(Purchase price-salvage value)/years of service
 
 Write  a c program the determine the salvage value of an item when the purchase price, years of service, and the annual depreciation are given.
 
