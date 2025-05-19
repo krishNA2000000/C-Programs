@@ -2881,12 +2881,17 @@ printf("Area of the circle: %.2f\n", area);
 
 Prints the area of the circle rounded to two decimal places.
 
-return 0;
+return 0; Ends the program successfully.
 
-Ends the program successfully.
+
 
 
 //write a c program to determine and print the sum of the following harmonic series for a given value of n: 1+1/2+1/3+.......+1/n. the value of n should be given interactively through the terminal.
+
+concept Used: Harmonic Series
+A harmonic series is the sum of reciprocals of natural numbers.
+
+This series converges slowly and is useful in mathematics and computer science (e.g., analysis of algorithms like QuickSort and in complexity theory).
 
 #include <stdio.h>
 
@@ -2912,6 +2917,29 @@ int main()
     }
     return 0;
 }
+Header Inclusion: Uses #include <stdio.h> to enable input/output functions.
+
+Variables:
+
+n stores the limit of the harmonic series.
+
+sum accumulates the sum and is of type float to handle decimal values.
+
+User Input: The value of n is taken interactively through the terminal.
+
+Validation: Checks if n is negative; if yes, prints an error message.
+
+Loop Execution:
+
+Runs a for loop from 1 to n.
+
+Adds 1.0/i to sum in each iteration.
+
+Uses 1.0 to force floating-point division.
+
+Output: Displays the computed sum of the harmonic series.
+
+Return Statement: return 0; ends the program normally.
 
 
 //write a program to read the price of an item in decimal form (like 18.55) and print the output in paise (like 1855)
