@@ -3001,10 +3001,13 @@ int main()
     return 0;
 }
 note:
-LOOP           PROS                                           KEY POINT
-for            simple and clean                               Easy to understand
-while          same logic as for but different syntax         Good for beginners
-Recursion      Elegant and mathematical                       NOt memory efficient for large 'n' due to stack usage
+-----------------------------------------------------------------------------------------------------------------------
+|LOOP        |   PROS                                     |      KEY POINT                                             | 
+|----------------------------------------------------------------------------------------------------------------------|
+|for         |   simple and clean                         |      Easy to understand                                    | 
+|while       |   same logic as for but different syntax   |      Good for beginners                                    | 
+|Recursion   |   Elegant and mathematical                 |      NOt memory efficient for large 'n' due to stack usage |
+-----------------------------------------------------------------------------------------------------------------------
 
 //write a program to read the price of an item in decimal form (like 18.55) and print the output in paise (like 1855)
 
