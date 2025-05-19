@@ -2940,7 +2940,71 @@ Uses 1.0 to force floating-point division.
 Output: Displays the computed sum of the harmonic series.
 
 Return Statement: return 0; ends the program normally.
+(or)
+Using :while loop
+#include <stdio.h>
 
+int main()
+{
+    int n, i = 1;
+    float sum = 0.0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    if (n < 0)
+    {
+        printf("Invalid number, enter a positive number!!");
+    }
+    else
+    {
+        while (i <= n)
+        {
+            sum += 1.0 / i;
+            i++;
+        }
+        printf("The series sum is %f", sum);
+    }
+
+    return 0;
+}
+(or)
+using : recursion
+#include <stdio.h>
+
+// Recursive function to calculate harmonic sum
+float harmonic_sum(int n)
+{
+    if (n == 1)
+        return 1.0;
+    else
+        return 1.0 / n + harmonic_sum(n - 1);
+}
+
+int main()
+{
+    int n;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    if (n < 1)
+    {
+        printf("Invalid number, enter a positive number!!");
+    }
+    else
+    {
+        float sum = harmonic_sum(n);
+        printf("The series sum is %f", sum);
+    }
+
+    return 0;
+}
+note:
+LOOP           PROS                                           KEY POINT
+for            simple and clean                               Easy to understand
+while          same logic as for but different syntax         Good for beginners
+Recursion      Elegant and mathematical                       NOt memory efficient for large 'n' due to stack usage
 
 //write a program to read the price of an item in decimal form (like 18.55) and print the output in paise (like 1855)
 
