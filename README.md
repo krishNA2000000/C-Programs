@@ -3000,7 +3000,21 @@ int main()
 
     return 0;
 }
-note:
+#note:
+##While loop:
+Key Differences from the for loop version:
+
+-Instead of defining the counter (i) inside the loop, it is declared and initialized before the loop.
+
+-The loop condition and increment happen separately.
+-int i = 1; – Start counting from 1.
+
+-while (i <= n) – Loop until i becomes greater than n.
+
+-Inside the loop: sum += 1.0 / i; – Add each harmonic term.
+
+i++; – Manually increment the counter.
+
 
 |LOOP        |   PROS                                     |      KEY POINT                                             | 
 |------------|--------------------------------------------|------------------------------------------------------------|
