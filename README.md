@@ -3068,6 +3068,32 @@ int main()
     printf("the value in paise is: %d",convert);
     return 0;
 }
+(or)'s line- i.e., //(or) convert = (int)(n * 100 + 0.5); rounds to the nearest integer
+This line ensures rounding to the nearest integer instead of truncating.
+
+Example:
+
+18.567 * 100 = 1856.7 → 1856 without rounding.
+
+18.567 * 100 + 0.5 = 1857.2 → (int)1857.2 = 1857 
+
++0.5 before converting to int helps round properly.
+#include<stdio.h>
+
+int main()
+{
+    double n;
+    int convert;
+    
+    printf("Enter rupees in decimal value: ");
+    scanf("%lf", &n);
+    
+    convert = (int)(n * 100 + 0.5);  // Proper rounding
+    
+    printf("The value in paise is: %d\n", convert);
+    return 0;
+}
+
 
 //even numbers from 1 to 100
 #include <stdio.h>
