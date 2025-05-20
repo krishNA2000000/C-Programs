@@ -3025,6 +3025,36 @@ i++; – Manually increment the counter.
 
 //write a program to read the price of an item in decimal form (like 18.55) and print the output in paise (like 1855)
 
+ Concepts Used:
+Data Types:
+
+double for decimal (floating-point) numbers.
+
+int for whole numbers (paise).
+
+Type Conversion:
+
+Implicit conversion from double to int occurs in convert = n * 100;.
+
+Input/Output:
+
+scanf() to take input.
+
+printf() to display output.
+
+Arithmetic Operations:
+
+Multiplication is used for conversion (rupees × 100 = paise).
+The program reads a price in rupees as a double.
+
+It multiplies the rupees by 100 to convert to paise.
+
+The result is stored in an int variable, so fractional paise (if any) are lost.
+
+The final result in paise is printed.
+
+
+
 #include<stdio.h>
 
 int main()
@@ -3033,7 +3063,7 @@ int main()
     int convert;
     printf("enter rupees in deciaml value:");
     scanf("%lf",&n);
-    convert=n*100;
+    convert=n*100; //(or) convert = (int)(n * 100 + 0.5); rounds to the nearest integer
     
     printf("the value in paise is: %d",convert);
     return 0;
