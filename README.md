@@ -3096,6 +3096,13 @@ int main()
 
 
 //even numbers from 1 to 100
+Concept: Printing Even Numbers from 1 to 100
+Even Numbers: Numbers that are divisible by 2 (i.e., number % 2 == 0).
+
+Range: The program prints even numbers from 1 to 100, inclusive.
+
+Approach: Use a loop that starts from the smallest even number (2) and increases by 2 each time (i.e., i += 2)
+
 #include <stdio.h>
 
 int main() {
@@ -3112,6 +3119,41 @@ int main() {
 
     return 0;
 }
+xplanation of the Program
+Header File:
+
+#include <stdio.h>: Includes the standard input/output library needed for using printf().
+
+Main Function:
+
+int main(): Entry point of the C program.
+
+Variable Declaration:
+
+int i;: Declares an integer variable i used in the loop.
+
+Printing Message:
+
+printf("Even numbers from 1 to 100:\n");: Displays a message before printing the numbers.
+
+Loop to Print Even Numbers:
+
+for (i = 2; i <= 100; i += 2): Starts from 2, increases by 2 each time (ensures only even numbers).
+
+The loop continues as long as i is less than or equal to 100.
+
+Print Statement Inside Loop:
+
+printf("%d ", i);: Prints the current even number followed by a space.
+
+New Line After Loop:
+
+printf("\n");: Moves the cursor to a new line after printing all even numbers.
+
+Return Statement:
+
+return 0;: Indicates successful execution of the program.
+
 
 // write a program that requests two float type numbers from the user and then divides the first number by the second and display the result along with the numbers.
 #include<stdio.h>
