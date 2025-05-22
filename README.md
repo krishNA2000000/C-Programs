@@ -3119,7 +3119,7 @@ int main() {
 
     return 0;
 }
-xplanation of the Program
+explanation of the Program
 Header File:
 
 #include <stdio.h>: Includes the standard input/output library needed for using printf().
@@ -3156,6 +3156,20 @@ return 0;: Indicates successful execution of the program.
 
 
 // write a program that requests two float type numbers from the user and then divides the first number by the second and display the result along with the numbers.
+
+Concept: Division of Two Float Numbers
+Objective:
+
+Get two floating-point numbers from the user.
+
+Divide the first number by the second.
+
+Display both input numbers and the result of the division.
+
+Data Type Used:
+
+float is used to handle decimal (floating-point) values, allowing fractional inputs and outputs.
+
 #include<stdio.h>
 
 int main()
@@ -3166,6 +3180,51 @@ int main()
     div=x/y;
     printf("%.2f / %.2f = %.2f", x,y,div);
 }
+o/p-
+please enter the float value of x and y:
+5.5
+2.2
+5.50 / 2.20 = 2.50
+
+
+Explanation of the Program
+Header File:
+
+#include <stdio.h>: Includes the standard I/O library required for printf() and scanf() functions.
+
+Main Function:
+
+int main(): Entry point of the program.
+
+Variable Declaration:
+
+float x, y, div;:
+Declares three float variables:
+
+x and y to store user inputs.
+
+div to store the result of the division (x / y).
+
+Input Prompt:
+
+printf("please enter the float value of x and y:\n");:
+Displays a message prompting the user to enter two float values.
+
+Reading Input:
+
+scanf("\n%f\n%f", &x, &y);:
+Takes two float inputs from the user and stores them in x and y.
+(Note: The \n is unnecessary here and could potentially cause unexpected input issues — it can be removed for better practice.)
+
+Performing Division:
+
+div = x / y;:
+Calculates the result of dividing x by y and stores it in div.
+
+Output the Result:
+
+printf("%.2f / %.2f = %.2f", x, y, div);:
+Displays the values of x, y, and the result div, rounded to 2 decimal places.
 
 //the price of one kg of rice is Rs16.75 and one kg of sugar is Rs15. write a c program to get these values from the user and display the prices as follows: ***list of items***\n item Price\n rice rs.16.75\n sugar rs.15.00
 #include <stdio.h>
