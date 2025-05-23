@@ -3292,6 +3292,7 @@ int main() {
 
 
 //write c program to count and print the number of negative and positive numbers in a given set of numbers. Test your program with a suitable set of numbers. Use Scanf to read the numbers. Reading should be terminated when the value 0 is encountered
+
 #include <stdio.h>
 
 int main() {
@@ -3318,6 +3319,63 @@ int main() {
 
     return 0;
 }
+
+note:
+
+Looping (while(1)):
+
+Creates an infinite loop to accept user input until a break condition is met.
+
+Condition Checking (if):
+
+Used to check if the number is 0 (to break) or to decide whether it's positive or negative.
+
+Counters:
+
+Two counters pos_count and neg_count track how many positive and negative numbers are entered.
+
+Sentinel Value (0):
+
+The input 0 acts as a sentinel value, which signals the end of input.
+
+User Input with scanf():
+
+Reads integer input from the user repeatedly.
+
+Efficient Control Flow:
+
+Uses break to exit the loop as soon as the stopping condition (0) is met.
+
+Simple Logic, Real-World Use Case:
+
+Demonstrates how to process a list of numbers and derive meaningful information (counts).
+
+(or)
+With Array (Fixed Set of Numbers)
+
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {12, -5, 7, -9, 0, 4, -2};  // 0 will act as the stop signal
+    int pos_count = 0, neg_count = 0;
+    int i = 0;
+
+    while (numbers[i] != 0) {
+        if (numbers[i] > 0) {
+            pos_count++;
+        } else {
+            neg_count++;
+        }
+        i++;
+    }
+
+    printf("Number of positive numbers: %d\n", pos_count);
+    printf("Number of negative numbers: %d\n", neg_count);
+
+    return 0;
+}
+
+
 //write  a c program to do the following:
 a)Declare x and y as integer variables and z as a short variable
 b)assign two 6 digit numbers x and y
