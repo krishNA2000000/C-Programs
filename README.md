@@ -3245,6 +3245,51 @@ int main() {
 
     return 0;
 }
+Input and Output:
+
+scanf() is used to take user input (price values).
+
+printf() is used to display formatted output.
+
+Data Types:
+
+float is used to store decimal values (e.g., 16.75, 15.00).
+
+Formatting Output:
+
+%.2f ensures prices are shown with exactly two digits after the decimal point.
+
+\t is used to insert horizontal tabs for aligning text.
+
+String Formatting:
+
+Labels like "Rice" and "Sugar" are manually printed for clarity in the list.
+
+User Interaction:
+
+The program interacts with the user by asking for input, which makes it dynamic.
+
+Simple Structured Programming:
+
+A clear sequence of input → processing → output is followed.
+
+(or)
+
+modified version of the program with hardcoded prices (as per the original question's example):
+#include <stdio.h>
+
+int main() {
+    float rice_price = 16.75;
+    float sugar_price = 15.00;
+
+    printf("\n*** List of Items ***\n");
+    printf("Item\t\tPrice\n");
+    printf("Rice\t\tRs.%.2f\n", rice_price);
+    printf("Sugar\t\tRs.%.2f\n", sugar_price);
+
+    return 0;
+}
+
 
 //write c program to count and print the number of negative and positive numbers in a given set of numbers. Test your program with a suitable set of numbers. Use Scanf to read the numbers. Reading should be terminated when the value 0 is encountered
 #include <stdio.h>
