@@ -3412,6 +3412,44 @@ int main() {
 }
 
 //write a program to read two floating point numbers using a scanf statement, assign their sum to an integer variable and then output the values of all the three variables.
+
+Concepts Involved:
+Data Types:
+
+float: Used to store decimal numbers.
+
+int: Used to store whole numbers (no decimal).
+
+Type Conversion:
+
+Implicit conversion happens when assigning a float to an int. The fractional part is truncated (not rounded).
+
+Example: If num1 = 2.6 and num2 = 3.4, then num1 + num2 = 6.0, and sum will be 6.
+
+But if num1 = 2.6 and num2 = 3.7, sum = 6.3, and sum will be 6 (0.3 truncated).
+
+Input/Output Functions:
+
+scanf() reads values from the user.
+
+printf() displays values with formatting options (%.2f limits to 2 decimal places, %d for integers).
+
+Format Specifiers:
+
+%f: For float input.
+
+%.2f: For printing float values with 2 decimal places.
+
+%d: For printing integer values.
+
+Truncation vs Rounding:
+
+Truncation removes the decimal part.
+
+Rounding adjusts the number to the nearest whole value (not used here).
+
+
+
 #include <stdio.h>
 
 int main() {
