@@ -3470,6 +3470,15 @@ int main() {
 }
 
 //write a program to illustrate the use of typedef declaration in a program.
+
+Concept of typedef - Explained Point-Wise
+Purpose:
+typedef is used to give a new name (alias) to an existing data type, which can improve code readability and maintainability.
+
+Syntax:
+typedef existing_type new_name;
+
+
 #include <stdio.h>
 
 // Define a new data type named 'DISTANCE'
@@ -3495,6 +3504,28 @@ int main() {
 
     return 0;
 }
+
+Advantages:
+
+Makes complex declarations simpler.
+
+Improves readability and self-documentation.
+
+Useful when you want to abstract away implementation details (e.g., changing float to double later will only require changing the typedef once).
+
+Not a New Type:
+
+typedef does not create a new data type. It just gives a new name to an existing one.
+
+Common Use Cases:
+
+To rename primitive types (e.g., typedef int Age;)
+
+To simplify complex data types (e.g., structs, function pointers)
+
+To improve code clarity
+
+
 
 //write a program to illustrate the use of symbolic constants in a real life application.
 include <stdio.h>
