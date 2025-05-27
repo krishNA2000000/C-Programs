@@ -3592,6 +3592,55 @@ Makes mathematical expressions more readable.
 Helps in writing clean and professional code.
 
 
+Example 2: Real-Life Application: Gravitational Force Between Two Bodies
+
+F=G*m1*m2/r^2
+
+here:
+
+F = gravitational force (in Newtons)
+
+G = gravitational constant (6.674 × 10⁻¹¹ N·m²/kg²)
+
+m1, m2 = masses of two objects (in kg)
+
+r = distance between them (in meters)
+
+Symbolic Constant G: Represents a universal physical constant.
+
+Can also define other constants like:
+
+Earth’s mass
+
+Moon’s mass
+
+Average Earth-Moon distance
+
+
+
+#include <stdio.h>
+
+// Symbolic constants
+#define G 6.674e-11           // Gravitational constant in N·m²/kg²
+#define MASS_EARTH 5.972e24   // Mass of Earth in kg
+#define MASS_MOON 7.348e22    // Mass of Moon in kg
+#define DISTANCE 3.844e8      // Distance between Earth and Moon in meters
+
+int main() {
+    double force;
+
+    // Calculate gravitational force using symbolic constants
+    force = (G * MASS_EARTH * MASS_MOON) / (DISTANCE * DISTANCE);
+
+    printf("Gravitational Force between Earth and Moon: %.2e N\n", force);
+
+    return 0;
+}
+
+
+
+
+
 
 Chapter 2: Exercise programs
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
