@@ -3638,7 +3638,18 @@ int main() {
 }
 
 example 3:
-Real-Life Application: Celsius to Fahrenheit and vice-versa Conversion
+Real-Life Application: Celsius to Fahrenheit and vice-versa Conversion.
+Conversion Formulas:
+Celsius to Fahrenheit:
+
+𝐹=(𝐶×(9/5))+32
+
+Fahrenheit to Celsius:
+
+𝐶=(𝐹−32)×(5/9)
+
+​
+
 Symbolic Constants Used:
 FAHRENHEIT_OFFSET = 32
 
