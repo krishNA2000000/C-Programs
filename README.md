@@ -3637,6 +3637,43 @@ int main() {
     return 0;
 }
 
+example 3:
+Real-Life Application: Celsius to Fahrenheit and vice-versa Conversion
+Symbolic Constants Used:
+FAHRENHEIT_OFFSET = 32
+
+MULTIPLIER_C_TO_F = 9.0 / 5.0
+
+MULTIPLIER_F_TO_C = 5.0 / 9.0
+
+#include <stdio.h>
+
+// Symbolic constants
+#define FAHRENHEIT_OFFSET 32
+#define MULTIPLIER_C_TO_F (9.0 / 5.0)
+#define MULTIPLIER_F_TO_C (5.0 / 9.0)
+
+int main() {
+    float celsius, fahrenheit;
+
+    // Celsius to Fahrenheit
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = (celsius * MULTIPLIER_C_TO_F) + FAHRENHEIT_OFFSET;
+    printf("%.2f°C = %.2f°F\n", celsius, fahrenheit);
+
+    // Fahrenheit to Celsius
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%f", &fahrenheit);
+    celsius = (fahrenheit - FAHRENHEIT_OFFSET) * MULTIPLIER_F_TO_C;
+    printf("%.2f°F = %.2f°C\n", fahrenheit, celsius);
+
+    return 0;
+}
+
+
+
+
 
 
 
