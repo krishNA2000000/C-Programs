@@ -3528,6 +3528,28 @@ To improve code clarity
 
 
 //write a program to illustrate the use of symbolic constants in a real life application.
+
+concept: Symbolic Constants in C
+Symbolic constants are names (identifiers) that represent fixed values.
+
+In C, symbolic constants are defined using the #define preprocessor directive.
+
+These constants:
+
+Improve readability and maintainability of the code.
+
+Make it easier to update values in one place without modifying every usage.
+
+Commonly used in real-life applications to represent fixed values like:
+
+Mathematical constants (PI)
+
+Conversion factors (e.g., inches to cm)
+
+Fixed limits or settings (e.g., maximum users)
+
+
+
 include <stdio.h>
 
 #define PI 3.14159
@@ -3545,6 +3567,31 @@ int main() {
 
     return 0;
 }
+
+Real-Life Application Example: Area of a Circle
+Program Explanation:
+#define PI 3.14159
+
+Declares a symbolic constant named PI with a value of 3.14159.
+
+Used instead of hard-coding the value everywhere.
+
+The program prompts the user to enter the radius of a circle.
+
+It then calculates the area using the formula:
+
+Area=𝜋×𝑟^2
+
+Here, PI is used as the value of π (pi).
+
+Benefits in Real-Life Use:
+If the value of π ever needs to be updated (e.g., for higher precision), you only change it once in the #define.
+
+Makes mathematical expressions more readable.
+
+Helps in writing clean and professional code.
+
+
 
 Chapter 2: Exercise programs
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
