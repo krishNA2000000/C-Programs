@@ -3697,7 +3697,7 @@ A. Arithmetic Operators
 Used to perform basic arithmetic operations:
 
 |Operator  |	 Description	     |   Example|
--------------------------------------------------
+|----------|-------------------------|----------|
 |+	   |     Addition	     |   a + b  |
 |-	   |     Subtraction	     |   a - b  |
 |*	   |     Multiplication	     |   a * b  |
