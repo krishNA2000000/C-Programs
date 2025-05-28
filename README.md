@@ -3691,6 +3691,18 @@ int main() {
 
 
 Chapter 2: Exercise programs
+Operators in C
+Operators are special symbols that tell the compiler to perform specific mathematical or logical operations. C has a rich set of built-in operators classified into several categories:
+A. Arithmetic Operators
+Used to perform basic arithmetic operations:
+
+|Operator  |	 Description	     |   Example|
+-------------------------------------------------
+|+	   |     Addition	     |   a + b  |
+|-	   |     Subtraction	     |   a - b  |
+|*	   |     Multiplication	     |   a * b  |
+|/	   |     Division	     |   a / b  |
+|%	   |     Modulus (remainder) | 	a % b   |
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
 #include<stdio.h>
 
