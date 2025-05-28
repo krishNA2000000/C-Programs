@@ -3703,6 +3703,102 @@ Used to perform basic arithmetic operations:
 |*	   |     Multiplication	     |   a * b  |
 |/	   |     Division	     |   a / b  |
 |%	   |     Modulus (remainder) | 	a % b   |
+
+
+B. Relational (Comparison) Operators
+Used to compare two values:
+
+|Operator  |	Description	         |    Example|
+|----------|-----------------------------|-----------|
+|  ==	   |     Equal to	         |    a == b |
+|  !=	   |       Not equal to	         |    a != b |
+|   >	   |      Greater than	         |    a > b  |
+|   <	   |      Less than	         |    a < b  |
+|   >=	   |     Greater than or equal to|   a >= b  |
+|   <=	   |      Less than or equal to	 |    a <= b |
+
+
+C. Logical Operators
+Used to combine conditional statements:
+
+| Operator           |   	Description     |           	Example     |
+|--------------------|--------------------------|---------------------------|
+|   &&	             |           Logical AND	|         a > 5 && b < 10   |
+|   ||	             |           Logical OR     |  	 a > 5 || b < 10    |
+|    !	             |           Logical NOT	|              !a           |
+
+
+D. Assignment Operators
+Used to assign values to variables:
+
+|Operator	|           Description         |	Example                   |
+|---------------|-------------------------------|---------------------------------|
+|   =	        |         Assign	        |        a = 10                   |
+|   +=	        |        Add and assign	        |  a += 5 (means a = a + 5)       |
+|   -=	        |        Subtract and assign	|        a -= 5                   |
+|   *=	        |        Multiply and assign	|        a *= 5                   |
+|   /=	        |        Divide and assign	|        a /= 5                   |
+|   %=	        |        Modulus and assign	|        a %= 5                   |
+
+
+E. Unary Operators
+Operate on a single operand:
+
+|Operator      |   	Description	  |    Example           |
+|--------------|--------------------------|----------------------|
+|++	       |          Increment	  |    a++ or ++a        |
+|--	       |          Decrement	  |    a-- or --a        |  
+|-	       |          Negation	  |    -a                |
+|!	       |          Logical NOT	  |    !a                |
+
+
+F. Bitwise Operators
+Operate on binary representations:
+
+|Operator      |  	Description	   |    Example   |
+|--------------|---------------------------|--------------|
+|&	       |         Bitwise AND	   |     a & b    |
+||	       |         Bitwise OR        |     a | b    |
+|^	       |          Bitwise XOR	   |     a ^ b    |
+|~	       |          Bitwise NOT	   |       ~a     |
+|<<	       |          Left shift	   |     a << 1   |
+|>>	       |          Right shift	   |     a >> 1   |
+
+
+G. Conditional (Ternary) Operator
+Used for decision making:
+
+condition ? expression_if_true : expression_if_false;
+example:
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+
+
+H. Comma Operator
+Allows two expressions to be evaluated in a single statement:
+
+int a = (x = 5, x + 10);  // x is set to 5, then a is set to 15
+
+
+I. Sizeof Operator
+Returns the size (in bytes) of a data type or variable:
+
+sizeof(int);    // usually returns 4
+sizeof(a);      // returns size of variable `a`
+
+
+J. Pointer Operators
+Used in pointer operations:
+
+|Operator    |     	Description        	  |   Example  |
+|------------|------------------------------------|------------|
+|*	     |  Dereference (value at address)	  |    *ptr    |
+|&	     |   Address of a variable	          |     &a     |
+
+
+
+
+
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
 #include<stdio.h>
 
