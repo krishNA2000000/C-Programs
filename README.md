@@ -3690,8 +3690,10 @@ int main() {
 
 
 
-Chapter 2: Exercise programs
-Operators in C
+**Chapter 2: Exercise programs**
+
+
+*Operators in C*
 Operators are special symbols that tell the compiler to perform specific mathematical or logical operations. C has a rich set of built-in operators classified into several categories:
 A. Arithmetic Operators
 Used to perform basic arithmetic operations:
@@ -3797,6 +3799,17 @@ Used in pointer operations:
 
 
 
+*Expressions in C*
+An expression is a combination of variables, constants, and operators that computes a value.
+
+Types of Expressions:
+1.Arithmetic expressions
+2.Relational expressions
+3.Logical expressions
+4.Assignment expressions
+5.compound expressions
+
+Precedence and Associativity - When multiple operators are used, operator precedence and associativity determine how expressions are evaluated.
 
 
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
