@@ -3804,10 +3804,19 @@ An expression is a combination of variables, constants, and operators that compu
 
 Types of Expressions:
 1.Arithmetic expressions
+e.g., a + b * c
+
 2.Relational expressions
+e.g., a < b
+
 3.Logical expressions
+e.g., (a > 5) && (b < 10)
+
 4.Assignment expressions
+e.g., a = b + 10;
+
 5.compound expressions
+e.g., a = (b + c) * d;
 
 Precedence and Associativity - When multiple operators are used, operator precedence and associativity determine how expressions are evaluated.
 
