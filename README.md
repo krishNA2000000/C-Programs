@@ -3822,6 +3822,25 @@ Precedence and Associativity - When multiple operators are used, operator preced
 
 
 // Given the values of the variables x,y, and z write a program to rotate their values such that x has the value of y, y has the value of z, and z has the value of x. in c programming language
+
+Concept of Rotating Values
+When you're asked to rotate the values of three variables x, y, and z:
+
+Original:
+
+x = 3, y = 6, z = 9
+
+After rotation:
+
+x should get the value of y → x = 6
+
+y should get the value of z → y = 9
+
+z should get the value of x (original) → z = 3
+
+This kind of rotation is clockwise, where each variable gets the value of the next one in order.
+
+
 #include<stdio.h>
 
 int main()
@@ -3838,6 +3857,7 @@ int main()
     return 0;
     
 }
+
 
 // write a program that reads a floating-point number and then displays the right-most digit of the integral part of the number
 #include <stdio.h>
