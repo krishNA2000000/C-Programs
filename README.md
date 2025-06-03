@@ -3860,8 +3860,16 @@ int main()
 
 
 // write a program that reads a floating-point number and then displays the right-most digit of the integral part of the number
-#include <stdio.h>
 
+
+Floating-Point Number: A number that has both an integer and a decimal part (e.g., 123.45, -56.78).
+
+Integral Part: The whole number part before the decimal point in a floating-point number (e.g., for 123.45, it's 123).
+
+Rightmost Digit of Integral Part: The last digit of the integral part (e.g., for 123, it’s 3).
+
+
+#include <stdio.h>
 int main() {
     float number;
     int integral_part;
