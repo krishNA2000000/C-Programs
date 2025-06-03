@@ -3904,6 +3904,52 @@ For -123.45, integral part is -123, rightmost digit is -3.
 
 
 
+note:modified version of the program that correctly handles negative numbers by giving a positive rightmost digit of the integral part.
+
+#include <stdio.h>
+#include <stdlib.h> // for abs()
+
+int main() {
+    float number;
+    int integral_part;
+    int rightmost_digit;
+
+    printf("Enter a floating-point number: ");
+    scanf("%f", &number);
+
+    // Extract the integral part
+    integral_part = (int)number;
+
+    // Extract the rightmost digit (make it positive if needed)
+    rightmost_digit = abs(integral_part % 10);
+
+    printf("The integral part is: %d\n", integral_part);
+    printf("The rightmost digit of the integral part is: %d\n", rightmost_digit);
+
+    return 0;
+}
+Key Changes & Explanation
+#include <stdlib.h>:
+
+Required for the abs() function which returns the absolute (positive) value.
+
+abs(integral_part % 10):
+
+Ensures that the rightmost digit is always positive, even if the original number was negative.
+
+output:
+case 1: for positive number
+Enter a floating-point number: 123.45
+The integral part is: 123
+The rightmost digit of the integral part is: 3
+
+
+case 2: for negative number
+Enter a floating-point number: -987.65
+The integral part is: -987
+The rightmost digit of the integral part is: 7
+
+
 
 // modify the above program to display the two right-most digits of the integral part of the number
 #include <stdio.h>
