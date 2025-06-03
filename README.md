@@ -3890,6 +3890,21 @@ int main() {
     return 0;
 }
 
+
+Key Points
+Type Casting from float to int removes the fractional part.
+
+% 10 operation is used to get the last digit of an integer.
+
+Works for positive and negative floating-point numbers:
+
+For -123.45, integral part is -123, rightmost digit is -3.
+
+(Optional: abs() can be used to get positive digit if desired)
+
+
+
+
 // modify the above program to display the two right-most digits of the integral part of the number
 #include <stdio.h>
 
