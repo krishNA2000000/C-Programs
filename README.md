@@ -4020,6 +4020,58 @@ Output: The last two digits of the integral part are: 45
 Input: 9.3
 Output: The last two digits of the integral part are: 09
 
+(or) - version of the program that extracts the last two digits of both the integral and fractional parts of a floating-point number — and handles negative numbers properly too.
+#include <stdio.h>
+
+int main() {
+    float number;
+    int integral_part, last_two_integral;
+    int fractional_part, last_two_fractional;
+
+    printf("Enter a floating-point number: ");
+    scanf("%f", &number);
+
+    // Extract the integral part
+    integral_part = (int)number;
+
+    // Handle negative numbers
+    if (integral_part < 0)
+        integral_part = -integral_part;
+
+    // Extract the last two digits of the integral part
+    last_two_integral = integral_part % 100;
+
+    // Extract the fractional part (absolute to avoid negatives)
+    float abs_number = number < 0 ? -number : number;
+    float fraction = abs_number - (int)abs_number;
+
+    // Shift decimal two places and take int part
+    fractional_part = (int)(fraction * 100);
+
+    // Extract the last two digits of the fractional part
+    last_two_fractional = fractional_part % 100;
+
+    // Print results with leading zeros if needed
+    printf("Last two digits of the integral part: %02d\n", last_two_integral);
+    printf("Last two digits of the fractional part: %02d\n", last_two_fractional);
+
+    return 0;
+}
+Example Runs:
+
+Input: -4567.8934
+Output:
+Last two digits of the integral part: 67  
+Last two digits of the fractional part: 89
+
+
+Input: 12.04
+Output:
+Last two digits of the integral part: 12  
+Last two digits of the fractional part: 04
+
+
+
 //write a program that will obtain the length and width of a rectangle from the user and compute its area and perimeter.
 #include <stdio.h>
 
