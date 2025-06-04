@@ -3952,6 +3952,21 @@ The rightmost digit of the integral part is: 7
 
 
 // modify the above program to display the two right-most digits of the integral part of the number
+
+concept:
+This program:
+
+Takes a floating-point number as input.
+
+Extracts only the integral part of that number (ignoring decimal part).
+
+From that integral part, it picks the two right-most digits (like the last 2 digits of a number).
+
+Displays those two digits.
+
+
+
+
 #include <stdio.h>
 
 int main() {
@@ -3972,6 +3987,38 @@ int main() {
 
     return 0;
 }
+(or) - modified version of your program that correctly handles negative numbers while displaying the two right-most digits of the integral part:
+
+#include <stdio.h>
+
+int main() {
+    float number;
+    int integral_part;
+    int last_two_digits;
+
+    printf("Enter a floating-point number: ");
+    scanf("%f", &number);
+
+    // Extract the integral part
+    integral_part = (int)number;
+
+    // Make sure we work with a positive number to get correct last two digits
+    if (integral_part < 0)
+        integral_part = -integral_part;
+
+    // Extract the last two digits
+    last_two_digits = integral_part % 100;
+
+    printf("The last two digits of the integral part are: %02d\n", last_two_digits);
+
+    return 0;
+}
+example Runs:
+Input: -345.78
+Output: The last two digits of the integral part are: 45
+
+Input: 9.3
+Output: The last two digits of the integral part are: 09
 
 //write a program that will obtain the length and width of a rectangle from the user and compute its area and perimeter.
 #include <stdio.h>
